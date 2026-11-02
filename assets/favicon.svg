@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favFlame" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5500"/>
+      <stop offset="50%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FFC700"/>
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD666"/>
+      <stop offset="100%" stop-color="#FFA114"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#121214"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  
+  <!-- Hat -->
+  <path d="M22 36 C22 34 42 34 42 36 L40 40 C40 41 24 41 24 40 Z" fill="url(#favGold)"/>
+  <path d="M21 34 C17 32 18 25 23 24 C23 19 29 16 32 19 C35 16 41 19 41 24 C46 25 47 32 43 34 Z" fill="url(#favFlame)"/>
+  <!-- Mustache -->
+  <path d="M32 45 C29 42 24 43 21 46 C23 48 29 48 32 46.5 C35 48 41 48 43 46 C40 43 35 42 32 45 Z" fill="#FFFFFF"/>
+</svg>

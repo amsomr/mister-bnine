@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Complet & Tarifs | Mister Bnine Dcheira El Jihadia</title>
+  <meta name="description" content="Consultez la carte complète et les prix de Mister Bnine à Dcheira El Jihadia. Pizzas, Tacos, Burgers, Sandwiches, Shawarma et Salades de fruits de mer. Commandez en direct sur WhatsApp.">
+  <meta name="keywords" content="menu Mister Bnine, prix tacos Dcheira, prix pizza Dcheira, burgers Inezgane, carte Mister Bnine Agadir">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:title" content="Carte & Menu Complet | Mister Bnine Restaurant Dcheira">
+  <meta property="og:description" content="Découvrez tous nos plats préparés à la minute : Tacos, Pizzas, Burgers et Salades.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .menu-page-header {
+      padding-top: 150px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    .search-filter-bar {
+      max-width: 620px;
+      margin: 30px auto 10px;
+      position: relative;
+    }
+    .search-input-wrap {
+      position: relative;
+      width: 100%;
+    }
+    .search-input-wrap input {
+      width: 100%;
+      padding: 16px 20px 16px 52px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: #FFFFFF;
+      font-size: 1rem;
+      outline: none;
+      transition: all var(--duration-fast) ease;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    }
+    .search-input-wrap input:focus {
+      border-color: var(--accent-secondary);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px rgba(255, 138, 0, 0.25);
+    }
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glow -->
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-mid-left"></div>
+
+  <!-- Floating Island Navigation -->
+  <header class="island-header">
+    <nav class="nav-island" aria-label="Navigation Principale">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logo.svg" alt="Mister Bnine Logo" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html">Accueil</a></li>
+        <li class="nav-item"><a href="menu.html" class="active">Notre Menu</a></li>
+        <li class="nav-item"><a href="about.html">À Propos</a></li>
+        <li class="nav-item"><a href="contact.html">Localisation & Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-cart-trigger" aria-label="Voir le panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="https://wa.me/212665638487" target="_blank" rel="noopener" class="btn-primary">
+          <span>Commander</span>
+          <span class="btn-icon-circle">↗</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Menu Mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Notre Menu</a>
+    <a href="about.html">À Propos</a>
+    <a href="contact.html">Localisation & Contact</a>
+    <a href="tel:+212665638487" style="color:var(--accent-gold); font-size:1.3rem;">📞 06 65 63 84 87</a>
+  </div>
+
+  <main>
+    <section class="menu-page-header">
+      <div class="container">
+        <div class="eyebrow-badge">
+          <span class="dot"></span>
+          <span>Carte Gastronomique & Street Food</span>
+        </div>
+        <h1 style="font-size:3.2rem; margin-top:16px;">Notre Carte Complète</h1>
+        <p style="color:var(--text-secondary); max-width:600px; margin:12px auto 0; font-size:1.1rem;">
+          Toutes nos préparations sont faites maison à la commande. Choisissez vos plats et validez en un clic via WhatsApp ou par téléphone.
+        </p>
+
+        <!-- Search input -->
+        <div class="search-filter-bar">
+          <div class="search-input-wrap">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="menu-search-input" placeholder="Rechercher une pizza, un burger, un ingrédient...">
+          </div>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="menu-nav-tabs">
+          <button class="menu-tab-btn active" data-filter="all">Tous (18)</button>
+          <button class="menu-tab-btn" data-filter="pizza">🍕 Pizzas</button>
+          <button class="menu-tab-btn" data-filter="tacos">🌮 Tacos Français</button>
+          <button class="menu-tab-btn" data-filter="burger">🍔 Smash Burgers</button>
+          <button class="menu-tab-btn" data-filter="sandwich">🥪 Sandwichs & Shawarma</button>
+          <button class="menu-tab-btn" data-filter="salade">🥗 Salades Océanes</button>
+          <button class="menu-tab-btn" data-filter="boisson">🥤 Boissons & Desserts</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Listing Section -->
+    <section class="section" style="padding-top:10px;">
+      <div class="container">
+        
+        <div class="menu-grid">
+          
+          <!-- 1. Tacos Mixte -->
+          <div class="doppelrand-card menu-card" data-category="tacos">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=600&q=80" alt="Tacos Mixte">
+                <span class="item-badge">Best-Seller</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Tacos Mixte Gourmand</h3>
+                <span class="item-price">61 DH</span>
+              </div>
+              <p class="item-description">
+                Viande hachée 100% bœuf & escalope de poulet marinée, frites dorées, sauce fromagère onctueuse maison.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Format L • Frites incluses</span>
+                <button class="btn-add-cart" data-id="tacos-mixte" data-name="Tacos Mixte Gourmand" data-price="61">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Tacos Dinde / Poulet -->
+          <div class="doppelrand-card menu-card" data-category="tacos">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=600&q=80" alt="Tacos Poulet">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Tacos Escalope Poulet</h3>
+                <span class="item-price">57 DH</span>
+              </div>
+              <p class="item-description">
+                Morceaux de poulet tendres cuits sur plaque, frites fraîches, sauce fromagère secrète, sauce algérienne ou samouraï.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Format L • Frites incluses</span>
+                <button class="btn-add-cart" data-id="tacos-poulet" data-name="Tacos Escalope Poulet" data-price="57">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Tacos Fruits de Mer -->
+          <div class="doppelrand-card menu-card" data-category="tacos">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=600&q=80" alt="Tacos Fruits de Mer">
+                <span class="item-badge">Spécialité</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Tacos Fruits de Mer Royal</h3>
+                <span class="item-price">67 DH</span>
+              </div>
+              <p class="item-description">
+                Crevettes décortiquées et calamars frits, sauce blanche à l'ail et persil, sauce fromagère maison, frites.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Fruits de mer frais</span>
+                <button class="btn-add-cart" data-id="tacos-fruits-mer" data-name="Tacos Fruits de Mer Royal" data-price="67">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Pizza Fruits de Mer -->
+          <div class="doppelrand-card menu-card" data-category="pizza">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza Fruits de Mer">
+                <span class="item-badge">Chef Choice</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Pizza Fruits de Mer</h3>
+                <span class="item-price">65 DH</span>
+              </div>
+              <p class="item-description">
+                Coulis de tomates fraîches, mozzarella fondante, crevettes royales, calamars tendres, poivrons marinés, origan.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Pâte fine & croustillante</span>
+                <button class="btn-add-cart" data-id="pizza-fruits-mer" data-name="Pizza Fruits de Mer" data-price="65">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Pizza Viande Hachée -->
+          <div class="doppelrand-card menu-card" data-category="pizza">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza Viande Hachée">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Pizza Bolognese Bœuf</h3>
+                <span class="item-price">55 DH</span>
+              </div>
+              <p class="item-description">
+                Sauce tomate artisanale, double mozzarella, viande hachée assaisonnée aux herbes, champignons frais et olives noires.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">100% Bœuf frais local</span>
+                <button class="btn-add-cart" data-id="pizza-bolognese" data-name="Pizza Bolognese Bœuf" data-price="55">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Pizza 4 Fromages -->
+          <div class="doppelrand-card menu-card" data-category="pizza">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza 4 Fromages">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Pizza Quattro Formaggi</h3>
+                <span class="item-price">58 DH</span>
+              </div>
+              <p class="item-description">
+                Sauce tomate ou base crème, mozzarella fior di latte, emmental, gouda affiné et copeaux de fromage bleu.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Fondant incomparable</span>
+                <button class="btn-add-cart" data-id="pizza-4-fromages" data-name="Pizza Quattro Formaggi" data-price="58">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Magic Burger -->
+          <div class="doppelrand-card menu-card" data-category="burger">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Magic Burger">
+                <span class="item-badge">Top Vente</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Magic Double Burger</h3>
+                <span class="item-price">60 DH</span>
+              </div>
+              <p class="item-description">
+                Pain brioché artisanal doré, 2 steaks hachés pur bœuf, double cheddar rouge fondant, dinde fumée, sauce BBQ & frites.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Gourmet Smash</span>
+                <button class="btn-add-cart" data-id="burger-magic" data-name="Magic Double Burger" data-price="60">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Crispy Chicken Burger -->
+          <div class="doppelrand-card menu-card" data-category="burger">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Crispy Chicken Burger">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Crispy Chicken Burger</h3>
+                <span class="item-price">40 DH</span>
+              </div>
+              <p class="item-description">
+                Filet de poulet pané extra-croustillant façon tenders, salade iceberg fraîche, tranche de cheddar et mayonnaise moutardée.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Servi avec frites</span>
+                <button class="btn-add-cart" data-id="burger-crispy" data-name="Crispy Chicken Burger" data-price="40">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Big Cheese Burger -->
+          <div class="doppelrand-card menu-card" data-category="burger">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Big Cheese Burger">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Big Cheese Burger</h3>
+                <span class="item-price">50 DH</span>
+              </div>
+              <p class="item-description">
+                Steak haché généreux, double cheddar, cornichons doux marinés, oignons grillés, sauce ketchup-relish maison et frites.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Le classique indémodable</span>
+                <button class="btn-add-cart" data-id="burger-big-cheese" data-name="Big Cheese Burger" data-price="50">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Sandwich Mister Bnine -->
+          <div class="doppelrand-card menu-card" data-category="sandwich">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Sandwich Mister Bnine">
+                <span class="item-badge">Spécialité</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Sandwich Mister Bnine</h3>
+                <span class="item-price">55 DH</span>
+              </div>
+              <p class="item-description">
+                Pain artisanal toasté, escalope marinée, avocat frais écrasé, œuf dur, fromage coulant et sauce maison.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Signature de la maison</span>
+                <button class="btn-add-cart" data-id="sandwich-bnine" data-name="Sandwich Mister Bnine" data-price="55">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Shawarma Poulet -->
+          <div class="doppelrand-card menu-card" data-category="sandwich">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Shawarma Poulet">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Shawarma Poulet Grillé</h3>
+                <span class="item-price">42 DH</span>
+              </div>
+              <p class="item-description">
+                Émincé de poulet cuit à la broche avec marinade libanaise, crème d'ail maison toum, cornichons et frites.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Servi avec frites</span>
+                <button class="btn-add-cart" data-id="shawarma-poulet" data-name="Shawarma Poulet Grillé" data-price="42">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Sandwich Américain Viande Hachée -->
+          <div class="doppelrand-card menu-card" data-category="sandwich">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Sandwich Américain">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Sandwich Américain</h3>
+                <span class="item-price">47 DH</span>
+              </div>
+              <p class="item-description">
+                Baguette croustillante, viande hachée grillée sur plaque, fromage fondu, frites intégrées dans le pain et sauce samouraï.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Ultra rassasiant</span>
+                <button class="btn-add-cart" data-id="sandwich-americain" data-name="Sandwich Américain" data-price="47">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Salade Océane -->
+          <div class="doppelrand-card menu-card" data-category="salade">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Salade Océane">
+                <span class="item-badge">Frais</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Salade Royale Océane</h3>
+                <span class="item-price">65 DH</span>
+              </div>
+              <p class="item-description">
+                Crevettes fraîches sautées, lamelles de calamar, avocat mûr, maïs croquant, tomates cerises et vinaigrette au citron.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Produits de la mer frais</span>
+                <button class="btn-add-cart" data-id="salade-oceane" data-name="Salade Royale Océane" data-price="65">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 14. Salade César Poulet -->
+          <div class="doppelrand-card menu-card" data-category="salade">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Salade César">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Salade César Croustillante</h3>
+                <span class="item-price">48 DH</span>
+              </div>
+              <p class="item-description">
+                Laitue romaine croquante, aiguillettes de poulet pané chaud, croûtons dorés à l'ail, parmesan et sauce César onctueuse.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Un grand classique</span>
+                <button class="btn-add-cart" data-id="salade-cesar" data-name="Salade César Croustillante" data-price="48">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 15. Mojito Frais Citron Menthe -->
+          <div class="doppelrand-card menu-card" data-category="boisson">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Mojito Frais">
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Virgin Mojito Frais</h3>
+                <span class="item-price">22 DH</span>
+              </div>
+              <p class="item-description">
+                Citron vert pressé, feuilles de menthe fraîche pilées, glace pilée et eau gazeuse rafraîchissante. Saveur Classique ou Fraise.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Boisson glacée</span>
+                <button class="btn-add-cart" data-id="mojito" data-name="Virgin Mojito Frais" data-price="22">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 16. Jus d'Avocat aux Fruits Secs -->
+          <div class="doppelrand-card menu-card" data-category="boisson">
+            <div class="doppelrand-inner">
+              <div class="menu-item-media">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Jus Avocat">
+                <span class="item-badge">Énergie</span>
+              </div>
+              <div class="menu-item-header">
+                <h3 class="item-name">Jus Avocat Za3za3</h3>
+                <span class="item-price">26 DH</span>
+              </div>
+              <p class="item-description">
+                Avocat onctueux mixé au lait entier, garni d'amandes, noix, raisins secs et filet de miel pur du Souss.
+              </p>
+              <div class="menu-item-footer">
+                <span style="font-size:0.75rem; color:var(--text-muted);">Spécialité marocaine</span>
+                <button class="btn-add-cart" data-id="jus-avocat" data-name="Jus Avocat Za3za3" data-price="26">
+                  <span>Ajouter</span> +
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" aria-label="Panier">
+    <div class="cart-header">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span>Mon Panier Mister Bnine</span>
+      </h3>
+      <button class="btn-close-cart" aria-label="Fermer">✕</button>
+    </div>
+
+    <div class="cart-items-list"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total :</span>
+        <span class="cart-total-val">0 DH</span>
+      </div>
+
+      <div class="order-type-selector">
+        <button class="order-type-btn active" data-type="livraison">🛵 Livraison</button>
+        <button class="order-type-btn" data-type="emporter">🥡 À emporter</button>
+      </div>
+
+      <input type="text" id="cart-name" class="cart-input-field" placeholder="Votre nom complet...">
+      <input type="text" id="cart-address" class="cart-input-field" placeholder="Adresse exacte à Dcheira / Inezgane...">
+      <input type="text" id="cart-notes" class="cart-input-field" placeholder="Notes (sauces au choix, sans oignon...)">
+
+      <button class="btn-whatsapp-checkout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+        </svg>
+        <span>Envoyer sur WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
+          <p>La qualité gastronomique accessible à tous les habitants de Dcheira El Jihadia et du Grand Agadir.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Accès Direct</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Page d'Accueil</a></li>
+            <li><a href="menu.html">Carte & Tarifs</a></li>
+            <li><a href="about.html">Notre Histoire</a></li>
+            <li><a href="contact.html">Nous Contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horaires</h4>
+          <ul class="footer-links" style="color:var(--text-secondary); font-size:0.9rem;">
+            <li>Lundi - Dimanche</li>
+            <li>12:00 – 00:30</li>
+            <li>Livraison 7j/7</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Express</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+212665638487" style="color:var(--accent-gold); font-weight:700;">📞 06 65 63 84 87</a></li>
+            <li><a href="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29" target="_blank" rel="noopener">Fiche Google Maps ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mister Bnine. Tous droits réservés.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
