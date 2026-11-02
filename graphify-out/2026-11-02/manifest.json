@@ -1,0 +1,230 @@
+{
+  "app.js": {
+    "mtime": 1793618571.3046324,
+    "seen": 1793618909.8521516,
+    "ast_hash": "09df43b84cd5ecd14b43e7cecb48bc60",
+    "semantic_hash": "09df43b84cd5ecd14b43e7cecb48bc60"
+  },
+  "serve.py": {
+    "mtime": 1793618871.0278208,
+    "seen": 1793618909.8521557,
+    "ast_hash": "87ee34cdc01583d24b7a692ca378cd03",
+    "semantic_hash": "87ee34cdc01583d24b7a692ca378cd03"
+  },
+  "README.md": {
+    "mtime": 1793618875.6258545,
+    "seen": 1793619811.3933275,
+    "ast_hash": "96b52a362cf990b487e2fd87bcfcacf5",
+    "semantic_hash": ""
+  },
+  "about.html": {
+    "mtime": 1793619763.1612992,
+    "seen": 1793619811.3933306,
+    "ast_hash": "cfd1820e1aebad1fb32ee0618b6ca5ae",
+    "semantic_hash": ""
+  },
+  "contact.html": {
+    "mtime": 1793619798.7615464,
+    "seen": 1793619811.3933337,
+    "ast_hash": "fc5b6840574d3403b91beb0bf4f31080",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1793619659.5865798,
+    "seen": 1793619811.3933365,
+    "ast_hash": "e4289d0643a9e0459ee97279d4179c80",
+    "semantic_hash": ""
+  },
+  "llms.txt": {
+    "mtime": 1793618813.0633953,
+    "seen": 1793619811.3933394,
+    "ast_hash": "9b641d231c77cfbeb80c7a0b2846f57c",
+    "semantic_hash": ""
+  },
+  "menu.html": {
+    "mtime": 1793619725.3690367,
+    "seen": 1793619811.3933423,
+    "ast_hash": "f7704cc3b1b3848c23a420e0d11d7c47",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1793618798.3052876,
+    "seen": 1793619811.3933456,
+    "ast_hash": "ea537cfd71b138bb19d1890ec24e09be",
+    "semantic_hash": ""
+  },
+  "assets/favicon.svg": {
+    "mtime": 1793619561.7188857,
+    "seen": 1793619811.393349,
+    "ast_hash": "7791e0c4befdcf424eb4abc56208c5e2",
+    "semantic_hash": ""
+  },
+  "assets/logo.svg": {
+    "mtime": 1793619550.8688068,
+    "seen": 1793619811.3933513,
+    "ast_hash": "a1fecc616fac75fd7e743d308664132b",
+    "semantic_hash": ""
+  },
+  "assets/photos/affiche_burger.jpg": {
+    "mtime": 1793619524.201613,
+    "seen": 1793619811.3933542,
+    "ast_hash": "aba7f4d20167b35645e86ab11067feef",
+    "semantic_hash": ""
+  },
+  "assets/photos/affiche_couscous_vendredi.jpg": {
+    "mtime": 1793619524.1796129,
+    "seen": 1793619811.3933566,
+    "ast_hash": "ca917db84ae8b15ac1fbab635544ad0e",
+    "semantic_hash": ""
+  },
+  "assets/photos/affiche_menu_exact.jpg": {
+    "mtime": 1793619524.1836128,
+    "seen": 1793619811.393359,
+    "ast_hash": "bf2e81994b141d3d8c8be1d82cbb93a2",
+    "semantic_hash": ""
+  },
+  "assets/photos/affiche_promo_pizza.jpg": {
+    "mtime": 1793619524.195613,
+    "seen": 1793619811.3933613,
+    "ast_hash": "7016b79803982ad9769c0402d9659f29",
+    "semantic_hash": ""
+  },
+  "assets/photos/affiche_tacos_original.jpg": {
+    "mtime": 1793619524.1881268,
+    "seen": 1793619811.393364,
+    "ast_hash": "f9f8d52a23754341705919554d83105f",
+    "semantic_hash": ""
+  },
+  "assets/photos/boisson_smoothie_jar.jpg": {
+    "mtime": 1793619524.1930344,
+    "seen": 1793619811.3933666,
+    "ast_hash": "c6ba23ed1f43c809bbead2039e21135c",
+    "semantic_hash": ""
+  },
+  "assets/photos/boisson_za3za3_avocat.jpg": {
+    "mtime": 1793619524.1976047,
+    "seen": 1793619811.3933692,
+    "ast_hash": "85281b824ae53f0c97aaff8a35a01370",
+    "semantic_hash": ""
+  },
+  "assets/photos/exact_logo_emblem.jpg": {
+    "mtime": 1793619524.1789048,
+    "seen": 1793619811.393372,
+    "ast_hash": "8346b27807e74c285dfaac4c51b8c88c",
+    "semantic_hash": ""
+  },
+  "assets/photos/place_counter.jpg": {
+    "mtime": 1793619524.1734262,
+    "seen": 1793619811.393375,
+    "ast_hash": "fd01e0b3184ea0af06fcc6c6e94db12b",
+    "semantic_hash": ""
+  },
+  "assets/photos/place_interior_main.jpg": {
+    "mtime": 1793619524.1696126,
+    "seen": 1793619811.3933778,
+    "ast_hash": "d698529b256ed7fbcdabb0f797b9c0f4",
+    "semantic_hash": ""
+  },
+  "assets/photos/place_mezzanine.jpg": {
+    "mtime": 1793619524.1730938,
+    "seen": 1793619811.3933804,
+    "ast_hash": "1b0cc4b1b55e864bc55888914366e4d4",
+    "semantic_hash": ""
+  },
+  "assets/photos/place_pizza_oven.jpg": {
+    "mtime": 1793619524.1776128,
+    "seen": 1793619811.3933835,
+    "ast_hash": "0fd4f4c65fca44677d89f386705ba44e",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_assiette_poulet.jpg": {
+    "mtime": 1793619524.1934805,
+    "seen": 1793619811.393386,
+    "ast_hash": "910e72bb511862aae2666bf55ed5fc76",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_burger_giant_combo.jpg": {
+    "mtime": 1793619524.2016006,
+    "seen": 1793619811.3933885,
+    "ast_hash": "6e5d985f029d4b1b489a6b2a4f803bf3",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_burger_gourmet.jpg": {
+    "mtime": 1793619524.2010064,
+    "seen": 1793619811.3933914,
+    "ast_hash": "4f75dca3697e5526999c5b19f8c558f5",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_chicken_wrap.jpg": {
+    "mtime": 1793619524.1739721,
+    "seen": 1793619811.393394,
+    "ast_hash": "59d516f2ce0ccbad2b35b6f222fcc487",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_gratin_bowl.jpg": {
+    "mtime": 1793619524.198001,
+    "seen": 1793619811.3933961,
+    "ast_hash": "7ed70e4b8bcce9f0718c969a79d9a66a",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_pizza_artisanale.jpg": {
+    "mtime": 1793619524.179417,
+    "seen": 1793619811.3933988,
+    "ast_hash": "ae3371624fe879ddbf485ce4fc29fd64",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_pizza_table.jpg": {
+    "mtime": 1793619524.1891227,
+    "seen": 1793619811.3934014,
+    "ast_hash": "3427155ba723c5b6749e60c399fbea19",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_salade_cesar.jpg": {
+    "mtime": 1793619524.1866128,
+    "seen": 1793619811.3934035,
+    "ast_hash": "7658baf7d0d2fa32b87108fea892e1b1",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_salade_mister_bnine.jpg": {
+    "mtime": 1793619524.191897,
+    "seen": 1793619811.3934064,
+    "ast_hash": "c8b9b295a987cca88a0b6b0e47fd1643",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_salade_nicoise.jpg": {
+    "mtime": 1793619524.1887398,
+    "seen": 1793619811.393409,
+    "ast_hash": "fcc27c78534a02c3eaa3ee8655b302f2",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_sandwich_roll_plated.jpg": {
+    "mtime": 1793619524.205613,
+    "seen": 1793619811.3934114,
+    "ast_hash": "78276644b6a170d3d30e3b698d9d24e5",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_shawarma_roll.jpg": {
+    "mtime": 1793619524.204613,
+    "seen": 1793619811.3934138,
+    "ast_hash": "8892d8cf10b645dd153c8d5da914113c",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_tacos_combo.jpg": {
+    "mtime": 1793619524.197004,
+    "seen": 1793619811.3934164,
+    "ast_hash": "6c08bf3c4808e487b10fd4d5167eff4b",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_tacos_coupe.jpg": {
+    "mtime": 1793619524.182613,
+    "seen": 1793619811.3934188,
+    "ast_hash": "f889a7bce88e7c08f9359b98d4b2b172",
+    "semantic_hash": ""
+  },
+  "assets/photos/plat_wrap_combo.jpg": {
+    "mtime": 1793619524.1925027,
+    "seen": 1793619811.3934212,
+    "ast_hash": "6efc6c0e141c68d2f0d211b9faf7919a",
+    "semantic_hash": ""
+  }
+}

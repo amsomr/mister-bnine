@@ -16,6 +16,8 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo_mascot_round.png">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
@@ -81,7 +83,8 @@
   <!-- Floating Island Navigation -->
   <header class="island-header">
     <nav class="nav-island" aria-label="Navigation Principale">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" title="Mister Bnine Dcheira El Jihadia">
+        <img src="assets/logo_mascot_round.png" alt="Mascotte Officielle Mister Bnine" class="brand-mascot-img">
         <img src="assets/logo.svg" alt="Mister Bnine Logo" class="brand-logo-img">
       </a>
 
@@ -574,6 +577,34 @@
 
         </div>
 
+        <!-- Instagram Video Reels Preview Banner on Menu Page -->
+        <div class="instagram-follow-banner" style="margin-top:50px;">
+          <div class="ig-profile-preview">
+            <div class="ig-avatar-wrap">
+              <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="ig-avatar-img">
+              <span class="ig-badge-verified">✓</span>
+            </div>
+            <div>
+              <div class="ig-handle">
+                <span>Nos plats en vidéo sur Instagram</span>
+                <span style="font-size:0.75rem; color:var(--accent-gold); font-weight:700; background:rgba(229,169,60,0.15); padding:2px 8px; border-radius:10px;">@restaurant_misterbnine</span>
+              </div>
+              <div class="ig-bio">
+                Retrouvez la cuisson de nos pizzas au four à bois, la préparation des bowls et nos stories du jour sur notre compte Instagram officiel.
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="index.html#reels-section" class="btn-secondary" style="font-size:0.88rem; padding:10px 18px;">
+              <span>Voir les 6 Reels 🎬</span>
+            </a>
+            <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" class="btn-instagram" style="font-size:0.88rem; padding:10px 20px;">
+              <span>Ouvrir Instagram ↗</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
@@ -624,8 +655,16 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
+            <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
+          </div>
           <p>La qualité gastronomique accessible à tous les habitants de Dcheira El Jihadia et du Grand Agadir.</p>
+          <div style="margin-top:14px;">
+            <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--text-secondary); text-decoration:none; font-size:0.88rem; font-weight:600;">
+              <span style="color:#E1306C;">📷</span> @restaurant_misterbnine ↗
+            </a>
+          </div>
         </div>
         <div class="footer-col">
           <h4>Accès Direct</h4>

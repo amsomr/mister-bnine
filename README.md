@@ -19,6 +19,7 @@ Cette plateforme web a été conçue selon les plus hauts standards d'architectu
 - **Adresse :** 117, Hay Le Mers, Avenue Al Mourabitin, Dcheira El Jihadia 80000, Maroc
 - **Coordonnées GPS :** `30.3722634, -9.5227452`
 - **Fiche Google Maps :** [https://maps.app.goo.gl/Y2hHxJQywBc3FXu29](https://maps.app.goo.gl/Y2hHxJQywBc3FXu29)
+- **Compte Instagram Officiel :** [https://www.instagram.com/restaurant_misterbnine/](https://www.instagram.com/restaurant_misterbnine/) (`@restaurant_misterbnine`)
 - **Téléphone Direct :** `+212 6 65 63 84 87` (06 65 63 84 87)
 - **Horaires :** 12:00 – 00:30 (7 jours sur 7 en service continu)
 - **Services :** Sur place, À emporter, Livraison à domicile (Dcheira, Inezgane, Agadir Sud)
@@ -56,11 +57,11 @@ Cette plateforme web a été conçue selon les plus hauts standards d'architectu
 
 ```text
 mister-bnine/
-├── index.html            # Page d'accueil (Hero, Bento Avantages, Highlights, Avis, Carte)
-├── menu.html             # Menu digital complet avec recherche en temps réel et filtres
-├── about.html            # Histoire, sourcing des ingrédients frais, normes d'hygiène
-├── contact.html          # Plan d'accès, coordonnées, zones de livraison, contact rapide
-├── styles.css            # Système de design gastronomique moderne & responsive
+├── index.html            # Page d'accueil (Hero, Bento Avantages, Highlights, Galerie, Reels Instagram, Avis, Carte)
+├── menu.html             # Menu digital officiel avec prix réels, recherche en temps réel et filtres
+├── about.html            # Histoire, four au feu de bois, emblème MB, mascotte officielle, engagements
+├── contact.html          # Plan d'accès, coordonnées, Instagram officiel, WhatsApp direct, horaires
+├── styles.css            # Système de design gastronomique moderne & responsive (Double-Bezel UI)
 ├── app.js                # Moteur interactif (panier, WhatsApp checkout, horaires, recherche)
 ├── serve.py              # Serveur local Python zéro-dépendance (port 3005)
 ├── robots.txt            # Directives d'indexation et accès robots IA
@@ -68,8 +69,12 @@ mister-bnine/
 ├── llms.txt              # Fichier de contexte pour moteurs d'IA conversationnels
 ├── README.md             # Documentation complète du projet
 └── assets/
-    ├── logo.svg          # Logo officiel Mister Bnine (Typographie + Emblème toque & flamme)
-    └── favicon.svg       # Favicon SVG pour onglet navigateur
+    ├── logo.svg          # Emblème officiel four à bois « MB » + Typographie Mister Bnine
+    ├── favicon.svg       # Favicon SVG pour onglet navigateur
+    ├── favicon.png       # Favicon PNG haute fidélité
+    ├── logo_mascot_round.png # Mascotte officielle du Chef Mister Bnine (badge détouré)
+    ├── photos/           # 17 photos réelles des plats & des lieux extraites de Google Maps & affiches
+    └── instagram/        # 12 couvertures de reels authentiques (@restaurant_misterbnine)
 ```
 
 ---
@@ -83,10 +88,10 @@ Le projet ne nécessite aucune installation de paquets Node.js ni dépendance ex
 cd "/home/amsomr/Projects/mister-bnine"
 
 # 2. Lancer le serveur local
-python3 serve.py
+python3 serve.py 3005
 
 # 3. Ouvrir dans votre navigateur
-# http://localhost:3002/
+# http://localhost:3005/
 ```
 
 ---

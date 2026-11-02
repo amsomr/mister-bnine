@@ -16,6 +16,8 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo_mascot_round.png">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
@@ -60,7 +62,8 @@
   <!-- Island Navigation -->
   <header class="island-header">
     <nav class="nav-island" aria-label="Navigation Principale">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" title="Mister Bnine Dcheira El Jihadia">
+        <img src="assets/logo_mascot_round.png" alt="Mascotte Officielle Mister Bnine" class="brand-mascot-img">
         <img src="assets/logo.svg" alt="Mister Bnine Logo" class="brand-logo-img">
       </a>
 
@@ -168,6 +171,21 @@
                 </div>
               </div>
 
+              <div class="location-item" style="margin-bottom:20px;">
+                <div class="loc-icon-box" style="background: rgba(225, 48, 108, 0.15); color: #E1306C; border-color: rgba(225, 48, 108, 0.3);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="loc-text">
+                  <h4>Instagram Officiel</h4>
+                  <p><a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="color:#E1306C; font-size:1.1rem; font-weight:700; text-decoration:none;">@restaurant_misterbnine ↗</a></p>
+                  <p style="color:var(--text-muted); font-size:0.8rem;">Reels, coulisses, nouveautés et stories quotidiennes</p>
+                </div>
+              </div>
+
               <div class="location-item">
                 <div class="loc-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -270,8 +288,16 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
+            <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
+          </div>
           <p>La référence gourmande à Dcheira El Jihadia.</p>
+          <div style="margin-top:14px;">
+            <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--text-secondary); text-decoration:none; font-size:0.88rem; font-weight:600;">
+              <span style="color:#E1306C;">📷</span> @restaurant_misterbnine ↗
+            </a>
+          </div>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
