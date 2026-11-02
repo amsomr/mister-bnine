@@ -1,21 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="favFlame" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF5500"/>
-      <stop offset="50%" stop-color="#FF8A00"/>
-      <stop offset="100%" stop-color="#FFC700"/>
-    </linearGradient>
-    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFD666"/>
-      <stop offset="100%" stop-color="#FFA114"/>
+    <linearGradient id="favGoldOven" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="40%" stop-color="#E5A93C"/>
+      <stop offset="100%" stop-color="#B8860B"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="#121214"/>
-  <rect x="2" y="2" width="60" height="60" rx="14" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-  
-  <!-- Hat -->
-  <path d="M22 36 C22 34 42 34 42 36 L40 40 C40 41 24 41 24 40 Z" fill="url(#favGold)"/>
-  <path d="M21 34 C17 32 18 25 23 24 C23 19 29 16 32 19 C35 16 41 19 41 24 C46 25 47 32 43 34 Z" fill="url(#favFlame)"/>
-  <!-- Mustache -->
-  <path d="M32 45 C29 42 24 43 21 46 C23 48 29 48 32 46.5 C35 48 41 48 43 46 C40 43 35 42 32 45 Z" fill="#FFFFFF"/>
+  <rect width="64" height="64" rx="32" fill="#141416"/>
+  <!-- Open Stencil Ring -->
+  <path d="M 14 28 A 24 24 0 0 1 50 28" fill="none" stroke="url(#favGoldOven)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 50 36 A 24 24 0 0 1 14 36" fill="none" stroke="url(#favGoldOven)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Chef Hat -->
+  <path d="M 23 27 C 21 23 23 18 27 18 C 28 14 36 14 37 18 C 41 18 43 23 41 27 Z" fill="url(#favGoldOven)"/>
+  <rect x="23.5" y="27.5" width="17" height="2" rx="1" fill="url(#favGoldOven)"/>
+  <!-- MB Letters -->
+  <text x="21" y="46" font-family="'Playfair Display', Georgia, serif" font-size="14" font-weight="bold" font-style="italic" fill="url(#favGoldOven)">M</text>
+  <text x="33" y="46" font-family="'Playfair Display', Georgia, serif" font-size="14" font-weight="bold" font-style="italic" fill="url(#favGoldOven)">B</text>
 </svg>
