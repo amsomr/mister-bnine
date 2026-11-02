@@ -1,10 +1,10 @@
 # Mister Bnine (مستر بنين) - Restaurant & Fast-Food Dcheira El Jihadia
 
-> Mister Bnine est un restaurant réputé de restauration rapide gastronomique situé à Dcheira El Jihadia (Grand Agadir), Maroc, spécialisé dans les pizzas artisanales, les tacos français généreux avec sauce fromagère maison, les smash burgers et les salades aux fruits de mer frais.
+> Mister Bnine est un restaurant gastronomique et fast-food d'exception situé à Dcheira El Jihadia (Grand Agadir), Maroc, spécialisé dans les pizzas artisanales cuites au feu de bois sur pierre réfractaire, les tacos français gratinés avec sauce fromagère maison, les smash & gourmet burgers, les sandwichs roll et les salades royales fraîches.
 
 ## Informations Principales & Coordonnées
 - **Nom officiel :** Mister Bnine (مستر بنين)
-- **Catégorie :** Restaurant, Fast-Food, Pizzeria, Snack
+- **Catégorie :** Restaurant, Fast-Food, Pizzeria au feu de bois, Grillades
 - **Adresse :** 117, Hay Le Mers, Avenue Al Mourabitin, Dcheira El Jihadia, 80000, Région Souss-Massa, Maroc
 - **Coordonnées GPS :** 30.3722634, -9.5227452
 - **Fiche Google Maps :** https://maps.app.goo.gl/Y2hHxJQywBc3FXu29
@@ -12,17 +12,20 @@
 - **Téléphone & WhatsApp :** +212 6 65 63 84 87 (06 65 63 84 87)
 - **Horaires d'ouverture :** Du Lundi au Dimanche de 12:00 à 00:30 (Service continu 7j/7)
 - **Note moyenne Google :** 4.4 / 5.0 (basée sur plus de 145 avis vérifiés)
-- **Gamme de prix :** Accessible / Économique ($) - Prix entre 20 DH et 70 DH
+- **Gamme de prix :** Accessible / Économique ($) - Prix entre 25 DH et 50 DH
 
-## Spécialités Culinaires & Carte
-- **Pizzas Artisanales :** Pâte fermentée 48 heures, cuite avec une croûte croustillante et aérée. Options : Fruits de Mer frais, Viande Hachée, 4 Fromages, Poulet Barbecue.
-- **Tacos Français Gratinés :** Servis avec frites fraîches et sauce fromagère maison cuisinée chaque matin. Options : Poulet Escalope, Viande Hachée, Cordon Bleu, Mixte, Fruits de Mer.
-- **Smash & Gourmet Burgers :** Pain brioché toasté au beurre, double steak pur bœuf, cheddar affiné, dinde fumée, sauce signature.
-- **Sandwichs & Shawarma :** Sandwich Spécial Mister Bnine (avocat, poulet, œuf, fromage), Shawarma libanaise au poulet, Sandwich Américain.
-- **Salades Fraîches Océanes :** Salade Royale aux fruits de mer (crevettes sautées, calamars), Salade César au poulet croustillant.
-- **Boissons & Desserts :** Virgin Mojitos frais (menthe, citron vert), Jus d'avocat aux fruits secs (Za3za3).
+## Spécialités Culinaires & Carte Officielle
+- **Pizzas au Feu de Bois :** Cuisson au four traditionnel noir sur pierre réfractaire. Pâte fine aérée et croustillante. Margherita (35 DH), Reine aux champignons (45 DH). Offre spéciale : 2 pizzas achetées = 1 offerte du lundi au jeudi.
+- **Tacos Maison Gratinés :** Sauce fromagère cuisinée chaque matin, garnitures généreuses. Simple (35 DH), Double Gratiné au four (45 DH).
+- **Burgers Gourmets au Four :** Pain brioché toasté, double steak, tenders croustillants, cheddar affiné. Tower Burger Gourmet (45 DH).
+- **Sandwiches & Rolls :** Pain au choix (Pain Chika, Pain Aïch, Tortilla). Option frites +5 DH. Classic Shawarma (30 DH), Warp (30 DH), Sandwiche Roll (35 DH), American (35 DH), Spécial Mister Bnine (35 DH).
+- **Salades Fraîches :** Découpées chaque matin. Niçoise (30 DH), César (35 DH), Fruits de Mer (40 DH), Royale Mister Bnine au saumon et mangue (45 DH).
+- **Tradition & Desserts :** Couscous Royal du Vendredi (50 DH), Assiette Poulet Mariné (45 DH), Smoothie Za3za3 Avocat aux fruits secs (25 DH).
 
-## Services Proposés
-- Sur place (Salle climatisée conviviale)
-- À emporter (Emballages thermiques respectueux)
-- Livraison rapide à domicile à Dcheira El Jihadia, Inezgane, Tassila et environs via WhatsApp (+212 6 65 63 84 87).
+## Expérience Digitale & Pages du Site
+- **Accueil (`index.html`) :** Présentation immersive, ticker wordmark défilant, avis Google défilants (double marquee), plats signatures, galerie photo, reels Instagram et réservation.
+- **La Carte (`menu.html`) :** Menu complet avec filtres par catégories, recherche en temps réel et panier WhatsApp interactif.
+- **Notre Carte Book (`menu-book.html`) :** Lecteur interactif des affiches officielles de la carte avec zoom et pagination.
+- **Réservation de Table (`reservation.html`) :** Module complet de réservation avec choix de la date, de l'heure et du nombre de convives.
+- **L'Expérience (`about.html`) :** Histoire de la maison, le four à bois et son logo doré « MB », la mascotte officielle et les engagements de qualité.
+- **Localisation & Contact (`contact.html`) :** Coordonnées, horaires, itinéraire et plan Google Maps interactif.

@@ -1,76 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr" dir="ltr" class="scroll-smooth antialiased">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À Propos | Mister Bnine - L'Histoire et les Valeurs à Dcheira El Jihadia</title>
-  <meta name="description" content="Découvrez l'histoire de Mister Bnine à Dcheira El Jihadia. Notre four à bois traditionnel, notre engagement pour des produits 100% frais et l'amour de la bonne cuisine marocaine.">
-  <meta name="keywords" content="Mister Bnine histoire, restaurant Dcheira El Jihadia, qualité Mister Bnine, four a bois Dcheira, snack Dcheira, cuisine marocaine fast food">
+  <title>L'Expérience & Notre Histoire | Mister Bnine Dcheira El Jihadia</title>
+  <meta name="description" content="Découvrez l'histoire de Mister Bnine : notre four à bois traditionnel, notre cuisine artisanale et la passion des saveurs à Dcheira El Jihadia.">
+  <meta name="theme-color" content="#141210">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="À Propos de Mister Bnine | Dcheira El Jihadia">
-  <meta property="og:description" content="L'histoire passionnée d'un restaurant qui a su conquérir le cœur et les papilles de Hay Le Mers.">
-  <meta property="og:image" content="assets/photos/place_interior_main.jpg">
-  <meta property="og:url" content="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29">
-
-  <!-- Favicon -->
+  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="alternate icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/logo_mascot_round.png">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    .about-header {
-      padding-top: 150px;
-      padding-bottom: 60px;
-      text-align: center;
-    }
-    .about-story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-      margin-bottom: 80px;
-    }
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      margin-top: 40px;
-    }
-    @media (max-width: 900px) {
-      .about-story-grid, .values-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Ambient Glow -->
-  <div class="ambient-glow glow-top-right"></div>
-  <div class="ambient-glow glow-mid-left"></div>
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-top"></div>
 
-  <!-- Island Navigation -->
-  <header class="island-header">
-    <nav class="nav-island" aria-label="Navigation Principale">
-      <a href="index.html" class="brand-link" title="Mister Bnine Dcheira El Jihadia">
-        <img src="assets/logo_mascot_round.png" alt="Mascotte Officielle Mister Bnine" class="brand-mascot-img">
-        <img src="assets/logo.svg" alt="Mister Bnine Logo" class="brand-logo-img">
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="site-navbar site-navbar-glass" aria-label="Navigation Principale">
+      <a href="index.html" class="brand-wrap">
+        <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title-main">Mister Bnine</span>
+          <span class="brand-subtitle-arabic">مستر بنين • دشيرة</span>
+        </div>
       </a>
 
       <ul class="nav-links">
-        <li class="nav-item"><a href="index.html">Accueil</a></li>
-        <li class="nav-item"><a href="menu.html">Notre Menu</a></li>
-        <li class="nav-item"><a href="about.html" class="active">À Propos</a></li>
-        <li class="nav-item"><a href="contact.html">Localisation & Contact</a></li>
+        <li class="nav-link-item"><a href="index.html">Accueil</a></li>
+        <li class="nav-link-item"><a href="menu.html">La Carte</a></li>
+        <li class="nav-link-item"><a href="menu-book.html">Notre Carte Book</a></li>
+        <li class="nav-link-item"><a href="about.html" class="active">L'Expérience</a></li>
+        <li class="nav-link-item"><a href="index.html#reviews">Avis Clients</a></li>
+        <li class="nav-link-item"><a href="contact.html">Contact</a></li>
       </ul>
 
-      <div class="nav-actions">
-        <button class="btn-cart-trigger" aria-label="Panier">
+      <div class="header-actions">
+        <a href="reservation.html" class="btn-gold btn-gold-header">
+          <span>Réserver ma table</span>
+          <span>↗</span>
+        </a>
+
+        <button class="btn-cart-trigger" aria-label="Voir le panier">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -78,11 +59,6 @@
           </svg>
           <span class="cart-count-badge" style="display:none;">0</span>
         </button>
-
-        <a href="https://wa.me/212665638487" target="_blank" rel="noopener" class="btn-primary">
-          <span>Commander</span>
-          <span class="btn-icon-circle">↗</span>
-        </a>
 
         <button class="mobile-toggle" aria-label="Menu Mobile">
           <span></span><span></span><span></span>
@@ -92,235 +68,167 @@
   </header>
 
   <!-- Mobile Drawer -->
-  <div class="mobile-nav-drawer">
+  <div class="mobile-drawer">
     <a href="index.html">Accueil</a>
-    <a href="menu.html">Notre Menu</a>
-    <a href="about.html">À Propos</a>
-    <a href="contact.html">Localisation & Contact</a>
-    <a href="tel:+212665638487" style="color:var(--accent-gold); font-size:1.3rem;">📞 06 65 63 84 87</a>
+    <a href="menu.html">La Carte</a>
+    <a href="menu-book.html">Notre Carte Book</a>
+    <a href="reservation.html">Réserver ma table</a>
+    <a href="about.html">L'Expérience</a>
+    <a href="contact.html">Contact</a>
   </div>
 
-  <main>
-    <section class="about-header">
-      <div class="container">
-        <div class="eyebrow-badge">
-          <span class="dot"></span>
-          <span>L'Origine & La Passion</span>
-        </div>
-        <h1 style="font-size:3.4rem; margin-top:16px;">La Passion du Goût Authentique</h1>
-        <p style="color:var(--text-secondary); max-width:640px; margin:14px auto 0; font-size:1.15rem;">
-          Bienvenue chez Mister Bnine : un four à pizza au feu de bois traditionnel, des recettes fraîches et la générosité marocaine au quotidien.
+  <main style="padding-top:100px;">
+    <!-- Story Header -->
+    <section class="section" style="padding-bottom:30px;">
+      <div class="container" style="text-align:center;">
+        <span class="section-script-subtitle">L'Origine & La Passion</span>
+        <h1 class="section-title-display">La Passion du Goût Authentique</h1>
+        <p class="section-desc-lead" style="max-width:700px; margin:14px auto 0;">
+          Bienvenue chez Mister Bnine : un four à pizza au feu de bois traditionnel, des recettes fraîches et la générosité marocaine au quotidien sur l'Avenue Al Mourabitin.
         </p>
       </div>
     </section>
 
-    <!-- Story Grid -->
-    <section class="section" style="padding-top:0;">
+    <!-- Story Content Grid -->
+    <section class="section" style="padding-top:20px;">
       <div class="container">
         
-        <div class="about-story-grid">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; margin-bottom:70px;">
           <div>
-            <div class="eyebrow-badge" style="margin-bottom:14px;">Notre Histoire</div>
-            <h2 style="font-size:2.4rem; margin-bottom:18px;">Pourquoi « Mister Bnine » ?</h2>
-            <p style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:16px; line-height:1.7;">
-              En Darija marocaine, <strong>« Bnine » (بنين)</strong> exprime ce qui est véritablement délicieux et savoureux. Implanté sur l'<strong>Avenue Al Mourabitin (Hay Le Mers)</strong> à Dcheira El Jihadia, notre restaurant est né d'une passion simple :
+            <span class="section-script-subtitle">Notre Histoire</span>
+            <h2 class="section-title-display" style="font-size:2.4rem; margin-bottom:16px;">Pourquoi « Mister Bnine » ?</h2>
+            <p style="color:var(--text-secondary); font-size:1.05rem; line-height:1.7; margin-bottom:16px;">
+              En Darija marocaine, <strong>« Bnine » (بنين)</strong> exprime ce qui est véritablement délicieux, savoureux et préparé avec amour. Implanté au 117 Avenue Al Mourabitin (Hay Le Mers) à Dcheira El Jihadia, notre établissement est né d'une volonté claire :
             </p>
-            <p style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:24px; line-height:1.7;">
+            <p style="color:var(--text-secondary); font-size:1.05rem; line-height:1.7; margin-bottom:24px;">
               Offrir aux familles, travailleurs et jeunes de Dcheira et d'Inezgane un lieu convivial et soigné, doté d'un <strong>véritable four à bois</strong> pour cuire des pizzas authentiques, et d'une cuisine propre où chaque salade est assemblée le matin même.
             </p>
-            <div class="arabic-text" style="font-size:1.25rem; color:var(--accent-gold); font-weight:700; border-right:3px solid var(--accent-secondary); padding-right:16px;">
+            <div class="font-arabic" style="font-size:1.25rem; color:var(--gold-primary); font-weight:700; border-right:3px solid var(--gold-dark); padding-right:16px; line-height:1.8;">
               « الجودة العالية، الفران التقليدي، والخدمة المتقونة.. هذا هو سر النجاح ديال مستر بنين مع كاع ولاد دشيرة »
             </div>
           </div>
 
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:420px;">
-              <img src="assets/photos/place_interior_main.jpg" alt="Vraie salle du Restaurant Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-            </div>
+          <div style="border-radius:var(--radius-xl); overflow:hidden; border:1px solid var(--gold-border); box-shadow:0 16px 48px rgba(0,0,0,0.6); height:380px;">
+            <img src="assets/photos/place_interior_main.jpg" alt="Vraie salle du Restaurant Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
           </div>
         </div>
 
-        <!-- Four à bois spotlight & Dual Emblem -->
-        <div class="about-story-grid" style="margin-top:60px;">
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:380px;">
-              <img src="assets/photos/place_pizza_oven.jpg" alt="Four à bois Mister Bnine avec logo MB" style="width:100%; height:100%; object-fit:cover;">
-            </div>
+        <!-- Four à bois & Double Emblem Spotlight -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; margin-bottom:70px;">
+          <div style="border-radius:var(--radius-xl); overflow:hidden; border:1px solid var(--gold-border); box-shadow:0 16px 48px rgba(0,0,0,0.6); height:380px;">
+            <img src="assets/photos/place_pizza_oven.jpg" alt="Four à bois Mister Bnine avec logo MB" style="width:100%; height:100%; object-fit:cover;">
           </div>
 
           <div>
-            <div class="eyebrow-badge" style="margin-bottom:14px;">Notre Fierté & Identité</div>
-            <h2 style="font-size:2.3rem; margin-bottom:16px;">Le Four au Feu de Bois & L'Emblème « MB »</h2>
-            <p style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:16px; line-height:1.7;">
+            <span class="section-script-subtitle">Notre Fierté & Identité</span>
+            <h2 class="section-title-display" style="font-size:2.4rem; margin-bottom:16px;">Le Four au Feu de Bois & L'Emblème « MB »</h2>
+            <p style="color:var(--text-secondary); font-size:1.05rem; line-height:1.7; margin-bottom:16px;">
               Pièce maîtresse de notre cuisine, notre four traditionnel noir orné du logo doré <strong>« MB »</strong> cuit vos pizzas à très haute température sur pierre réfractaire.
             </p>
-            <p style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:20px; line-height:1.7;">
+            <p style="color:var(--text-secondary); font-size:1.05rem; line-height:1.7; margin-bottom:24px;">
               Résultat : une pâte légère, aérée et subtilement fumée que vous ne retrouverez nulle part ailleurs dans le secteur de Dcheira.
             </p>
-            <div style="display:flex; align-items:center; gap:16px; background:rgba(255,255,255,0.03); border:1px solid var(--border-glow); border-radius:var(--radius-md); padding:12px 18px;">
-              <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" style="width:52px; height:52px; border-radius:50%; border:2px solid var(--accent-gold); object-fit:cover;">
-              <div style="font-size:0.88rem; color:var(--text-secondary);">
-                <strong style="color:#FFF;">La mascotte officielle du Chef Mister Bnine</strong> accompagne toutes nos affiches et stories Instagram pour symboliser la bonne humeur et l'accueil marocain.
+            <div style="display:flex; align-items:center; gap:16px; background:rgba(214,173,99,0.08); border:1px solid var(--gold-border); border-radius:var(--radius-md); padding:16px 20px;">
+              <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" style="width:56px; height:56px; border-radius:50%; border:2px solid var(--gold-primary); object-fit:cover; flex-shrink:0;">
+              <div style="font-size:0.9rem; color:var(--text-secondary); line-height:1.5;">
+                <strong style="color:#FFF;">La mascotte officielle du Chef Mister Bnine</strong> accompagne nos affiches et stories Instagram pour symboliser la bonne humeur, le partage et l'hospitalité marocaine.
               </div>
             </div>
           </div>
         </div>
 
         <!-- 3 Pillars of Quality -->
-        <div style="text-align:center; max-width:600px; margin:60px auto 0;">
-          <div class="eyebrow-badge">
-            <span class="dot"></span>
-            <span>Nos 3 Piliers</span>
-          </div>
-          <h2 style="font-size:2.3rem; margin-top:12px;">Nos Engagements Inébranlables</h2>
+        <div class="section-header-center" style="margin-bottom:40px;">
+          <span class="section-script-subtitle">Nos 3 Piliers</span>
+          <h2 class="section-title-display">Nos Engagements Inébranlables</h2>
         </div>
 
-        <div class="values-grid">
-          
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner">
-              <div class="bento-icon-box">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </div>
-              <h3 style="font-size:1.35rem; margin-bottom:10px;">100% Fraîcheur & Halal</h3>
-              <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">
-                Nos viandes sont certifiées halal et approvisionnées quotidiennement. Les salades sont coupées et assaisonnées le matin au restaurant.
-              </p>
-            </div>
+        <div class="welcome-pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-arch-header">🥩</div>
+            <h3 class="pillar-title">100% Fraîcheur & Halal</h3>
+            <p class="pillar-desc">
+              Nos viandes sont certifiées halal et approvisionnées quotidiennement. Les salades sont coupées et assaisonnées le matin au restaurant.
+            </p>
           </div>
 
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner">
-              <div class="bento-icon-box">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                </svg>
-              </div>
-              <h3 style="font-size:1.35rem; margin-bottom:10px;">Accueil Chaleureux</h3>
-              <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">
-                Que vous veniez sur place en famille ou commandiez pour emporter, notre équipe vous réserve un accueil attentif, respectueux et toujours souriant.
-              </p>
-            </div>
+          <div class="pillar-card">
+            <div class="pillar-arch-header">🤝</div>
+            <h3 class="pillar-title">Accueil Chaleureux</h3>
+            <p class="pillar-desc">
+              Que vous veniez sur place en famille ou commandiez pour emporter, notre équipe vous réserve un accueil attentif, respectueux et toujours souriant.
+            </p>
           </div>
 
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner">
-              <div class="bento-icon-box">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="12" y1="1" x2="12" y2="23"></line>
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                </svg>
-              </div>
-              <h3 style="font-size:1.35rem; margin-bottom:10px;">Tarifs Justes & Clairs</h3>
-              <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">
-                Des sandwiches et salades à partir de 30 DH seulement. Des portions généreuses qui nourrissent vraiment au juste prix.
-              </p>
-            </div>
+          <div class="pillar-card">
+            <div class="pillar-arch-header">🪙</div>
+            <h3 class="pillar-title">Tarifs Justes & Clairs</h3>
+            <p class="pillar-desc">
+              Des sandwiches et salades à partir de 30 DH seulement. Des portions généreuses qui nourrissent vraiment au juste prix.
+            </p>
           </div>
-
         </div>
 
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section" style="background:var(--bg-surface);">
-      <div class="container" style="text-align:center;">
-        <h2 style="font-size:2.4rem;">Venez Nous Rendre Visite à Dcheira</h2>
-        <p style="color:var(--text-secondary); max-width:550px; margin:14px auto 30px;">
-          Retrouvez-nous au 117 Avenue Al Mourabitin, ou passez votre commande directe sur WhatsApp au 06 65 63 84 87.
-        </p>
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-          <a href="https://wa.me/212665638487" target="_blank" class="btn-primary">
-            <span>Passer Commande WhatsApp</span>
-            <span class="btn-icon-circle">↗</span>
-          </a>
-          <a href="contact.html" class="btn-secondary">
-            <span>Itinéraire & Horaires</span>
-          </a>
+        <!-- CTA Box -->
+        <div style="text-align:center; margin-top:60px; background:#1c1814; border:1px solid var(--gold-border); border-radius:var(--radius-xl); padding:48px 32px;">
+          <span class="section-script-subtitle">Venez Nous Découvrir</span>
+          <h2 class="section-title-display" style="font-size:2.2rem; margin-bottom:14px;">Une table vous attend à Dcheira El Jihadia</h2>
+          <p style="color:var(--text-secondary); max-width:600px; margin:0 auto 28px;">
+            Réservez en quelques clics ou venez directement nous rendre visite au 117 Avenue Al Mourabitin.
+          </p>
+          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+            <a href="reservation.html" class="btn-gold">
+              <span>Réserver ma table</span>
+              <span>↗</span>
+            </a>
+            <a href="menu.html" class="btn-gold-outline">
+              <span>Découvrir la carte</span>
+              <span>📖</span>
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
   </main>
 
-  <!-- Cart Drawer -->
-  <div class="cart-drawer-overlay"></div>
-  <aside class="cart-drawer" aria-label="Panier">
-    <div class="cart-header">
-      <h3>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <path d="M16 10a4 4 0 0 1-8 0"></path>
-        </svg>
-        <span>Mon Panier Mister Bnine</span>
-      </h3>
-      <button class="btn-close-cart" aria-label="Fermer">✕</button>
-    </div>
-    <div class="cart-items-list"></div>
-    <div class="cart-footer">
-      <div class="cart-total-row">
-        <span>Total :</span>
-        <span class="cart-total-val">0 DH</span>
-      </div>
-      <div class="order-type-selector">
-        <button class="order-type-btn active" data-type="livraison">🛵 Livraison</button>
-        <button class="order-type-btn" data-type="emporter">🥡 À emporter</button>
-      </div>
-      <input type="text" id="cart-name" class="cart-input-field" placeholder="Votre nom complet...">
-      <input type="text" id="cart-address" class="cart-input-field" placeholder="Adresse à Dcheira / Inezgane...">
-      <input type="text" id="cart-notes" class="cart-input-field" placeholder="Notes particulières...">
-      <button class="btn-whatsapp-checkout">Envoyer sur WhatsApp</button>
-    </div>
-  </aside>
-
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+      <div class="footer-top-grid">
+        <div class="footer-brand-bio">
+          <div style="display:flex; align-items:center; gap:14px;">
             <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
-            <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
+            <span class="brand-title-main" style="font-size:1.8rem;">Mister Bnine</span>
           </div>
-          <p>La référence gourmande à Dcheira El Jihadia.</p>
-          <div style="margin-top:14px;">
-            <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--text-secondary); text-decoration:none; font-size:0.88rem; font-weight:600;">
-              <span style="color:#E1306C;">📷</span> @restaurant_misterbnine ↗
-            </a>
-          </div>
+          <p>La référence gourmande au feu de bois à Dcheira El Jihadia.</p>
         </div>
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul class="footer-links">
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="menu.html">Carte</a></li>
-            <li><a href="about.html">À Propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="menu.html">La Carte</a></li>
+            <li><a href="menu-book.html">Notre Carte Book</a></li>
+            <li><a href="reservation.html">Réserver ma table</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Horaires</h4>
-          <ul class="footer-links" style="color:var(--text-secondary); font-size:0.9rem;">
+        <div>
+          <h4 class="footer-col-title">Horaires</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>Lundi - Dimanche 7j/7</li>
             <li>12:00 – 00:30</li>
-            <li>Tous les jours 7j/7</li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="footer-links">
-            <li><a href="tel:+212665638487" style="color:var(--accent-gold); font-weight:700;">📞 06 65 63 84 87</a></li>
-            <li><a href="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29" target="_blank" rel="noopener">Fiche Google Maps ↗</a></li>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>117 Ave Al Mourabitin, Dcheira</li>
+            <li>📞 06 65 63 84 87</li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Mister Bnine. Tous droits réservés.</div>
+      <div class="footer-bottom-row">
+        <div>© 2026 Mister Bnine - Tous droits réservés.</div>
       </div>
     </div>
   </footer>

@@ -1,7 +1,7 @@
 # Graph Report - mister-bnine  (2026-11-02)
 
 ## Corpus Check
-- 3 files · ~50,231 words
+- 3 files · ~79,681 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 1, .xml 1, .css 1)
 

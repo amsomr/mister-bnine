@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr" dir="ltr" class="scroll-smooth antialiased">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mister Bnine | Restaurant & Fast-Food Gastronomique à Dcheira El Jihadia</title>
-  <meta name="description" content="Découvrez Mister Bnine à Dcheira El Jihadia (Hay Le Mers). Vos meilleurs Tacos gratinés, Pizzas au feu de bois, Burgers gourmets, Salades et Shawarma. Sur place, à emporter et livraison.">
-  <meta name="keywords" content="Mister Bnine, restaurant Dcheira, snack Dcheira El Jihadia, tacos Dcheira, pizza feu de bois Dcheira, burger Inezgane, shawarma Agadir, livraison nourriture Dcheira">
+  <title>Mister Bnine | Restaurant & Fast-Food au Feu de Bois à Dcheira El Jihadia</title>
+  <meta name="description" content="Découvrez Mister Bnine à Dcheira El Jihadia. Pizzas cuites au four à bois traditionnel, burgers gourmets, tacos gratinés, salades fraîches. Réservez votre table ou commandez sur WhatsApp.">
+  <meta name="keywords" content="Mister Bnine, restaurant Dcheira, snack Dcheira El Jihadia, pizza feu de bois Agadir, tacos Dcheira, burger Inezgane, restaurant marocain Dcheira, livraison Dcheira">
   
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Meta -->
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="Mister Bnine | Restaurant & Fast-Food à Dcheira El Jihadia">
-  <meta property="og:description" content="Pizzas au four à bois, Tacos gratinés ultra-généreux, Burgers gourmets et Salades fraîches. 117 Avenue Al Mourabitin, Dcheira El Jihadia.">
+  <meta property="og:description" content="Four à bois traditionnel, pizzas artisanales, burgers gourmets et accueil chaleureux au 117 Avenue Al Mourabitin.">
   <meta property="og:image" content="assets/photos/place_interior_main.jpg">
   <meta property="og:url" content="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29">
+  <meta name="theme-color" content="#141210">
 
-  <!-- Favicon -->
+  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="alternate icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/logo_mascot_round.png">
-  
-  <!-- Styles -->
+
+  <!-- Google Fonts: Cormorant Garamond, Dancing Script, Inter, Alexandria -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Schema.org JSON-LD Structured Data for Restaurant & FastFood -->
+  <!-- Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -72,30 +78,46 @@
 </head>
 <body>
 
-  <!-- Background Ambient Glow -->
-  <div class="ambient-glow glow-top-right"></div>
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-top"></div>
   <div class="ambient-glow glow-mid-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
 
-  <!-- Floating Island Navigation -->
-  <header class="island-header">
-    <nav class="nav-island" aria-label="Navigation Principale">
-      <a href="index.html" class="brand-link" title="Mister Bnine Dcheira El Jihadia">
-        <img src="assets/logo_mascot_round.png" alt="Mascotte Officielle Mister Bnine" class="brand-mascot-img">
-        <img src="assets/logo.svg" alt="Mister Bnine Logo" class="brand-logo-img">
+  <!-- ==========================================================================
+       SITE HEADER & GLASS NAVBAR (AL WALIMA LUXURY STYLE)
+       ========================================================================== -->
+  <header class="site-header">
+    <nav class="site-navbar site-navbar-glass" aria-label="Navigation Principale">
+      <!-- Brand Logo & Official Mascot -->
+      <a href="index.html" class="brand-wrap" title="Mister Bnine Dcheira El Jihadia">
+        <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title-main">Mister Bnine</span>
+          <span class="brand-subtitle-arabic">مستر بنين • دشيرة الجهادية</span>
+        </div>
       </a>
 
+      <!-- Desktop Links -->
       <ul class="nav-links">
-        <li class="nav-item"><a href="index.html" class="active">Accueil</a></li>
-        <li class="nav-item"><a href="menu.html">Notre Menu</a></li>
-        <li class="nav-item"><a href="#galerie-section">Galerie Réelle</a></li>
-        <li class="nav-item"><a href="#reels-section">Reels Instagram</a></li>
-        <li class="nav-item"><a href="about.html">À Propos</a></li>
-        <li class="nav-item"><a href="contact.html">Localisation & Contact</a></li>
+        <li class="nav-link-item"><a href="index.html" class="active">Accueil</a></li>
+        <li class="nav-link-item"><a href="menu.html">La Carte</a></li>
+        <li class="nav-link-item"><a href="menu-book.html">Notre Carte Book</a></li>
+        <li class="nav-link-item"><a href="about.html">L'Expérience</a></li>
+        <li class="nav-link-item"><a href="#reviews">Avis Clients</a></li>
+        <li class="nav-link-item"><a href="contact.html">Contact</a></li>
       </ul>
 
-      <div class="nav-actions">
-        <!-- Cart Trigger -->
-        <button class="btn-cart-trigger" aria-label="Voir le panier">
+      <!-- Actions -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch" title="Langues disponibles">
+          <span>FR</span>
+          <span style="opacity:0.4;">|</span>
+          <span style="opacity:0.7;">AR</span>
+        </div>
+
+        <!-- Cart Button -->
+        <button class="btn-cart-trigger" aria-label="Voir mon panier">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -104,503 +126,178 @@
           <span class="cart-count-badge" style="display:none;">0</span>
         </button>
 
-        <!-- Primary Action -->
-        <a href="https://wa.me/212665638487?text=Salam%20Mister%20Bnine%20!%20Je%20souhaite%20commander" target="_blank" rel="noopener" class="btn-primary">
-          <span>Commander</span>
-          <span class="btn-icon-circle">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M7 17L17 7M17 7H7M17 7V17"/>
-            </svg>
-          </span>
+        <!-- Reservation CTA -->
+        <a href="reservation.html" class="btn-gold btn-gold-header">
+          <span>Réserver ma table</span>
+          <span style="font-size:0.9rem;">↗</span>
         </a>
 
-        <!-- Mobile Hamburger -->
+        <!-- Mobile Hamburger Toggle -->
         <button class="mobile-toggle" aria-label="Menu Mobile">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
-  <div class="mobile-nav-drawer">
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Menu Mobile Déroulant">
     <a href="index.html">Accueil</a>
-    <a href="menu.html">Notre Menu</a>
-    <a href="#galerie-section">Galerie Réelle</a>
-    <a href="about.html">À Propos</a>
+    <a href="menu.html">La Carte</a>
+    <a href="menu-book.html">Notre Carte Book</a>
+    <a href="reservation.html" style="color:var(--gold-primary);">Réserver ma table</a>
+    <a href="about.html">L'Expérience</a>
+    <a href="#reviews">Avis Clients</a>
     <a href="contact.html">Localisation & Contact</a>
-    <a href="tel:+212665638487" style="color:var(--accent-gold); font-size:1.3rem;">📞 06 65 63 84 87</a>
-    <a href="https://wa.me/212665638487" target="_blank" class="btn-primary" style="margin-top:10px;">
-      <span>WhatsApp Direct</span>
-      <span class="btn-icon-circle">↗</span>
-    </a>
+    <div style="margin-top:20px;">
+      <a href="tel:+212665638487" style="font-size:1.15rem; color:var(--gold-light);">📞 06 65 63 84 87</a>
+    </div>
   </div>
 
   <main>
     <!-- ==========================================================================
-         HERO SECTION
+         HERO SECTION (AL WALIMA FACADE WITH MOORISH FRAME)
          ========================================================================== -->
     <section class="hero-section">
-      <div class="container">
-        <div class="hero-grid">
+      <img src="assets/photos/place_interior_main.jpg" alt="Salle de restaurant Mister Bnine" class="hero-facade-bg">
+      <div class="hero-vignette"></div>
+      <div class="moroccan-ornament" style="position:absolute; inset:0;"></div>
+
+      <div class="container" style="position:relative; z-index:2;">
+        <div class="hero-frame-shell">
+          <!-- Corner Arabesques (SVGs) -->
+          <svg class="pointer-events-none absolute left-3 top-4 h-[64px] w-[64px] opacity-75 sm:left-6 sm:top-6 sm:h-[90px] sm:w-[90px]" width="90" height="90" viewBox="0 0 100 100" fill="none" aria-hidden="true" style="position:absolute; top:12px; left:12px;">
+            <path d="M8 92 C 28 72 22 48 8 28 C 18 38 32 42 42 32 C 52 22 48 8 28 8 C 48 12 62 28 72 42 C 82 56 88 72 92 88" stroke="rgba(214,173,99,0.4)" stroke-width="1.2" stroke-linecap="round"></path>
+            <path d="M18 88 C 32 74 30 58 22 44 M 38 82 C 48 70 46 58 40 50" stroke="rgba(214,173,99,0.25)" stroke-width="0.9" stroke-linecap="round"></path>
+            <circle cx="24" cy="24" r="3" fill="rgba(214,173,99,0.3)"></circle>
+          </svg>
+
+          <svg class="pointer-events-none absolute bottom-4 right-3 h-[64px] w-[64px] opacity-75 sm:bottom-6 sm:right-6 sm:h-[90px] sm:w-[90px]" width="90" height="90" viewBox="0 0 100 100" fill="none" aria-hidden="true" style="position:absolute; bottom:12px; right:12px; transform:rotate(180deg);">
+            <path d="M8 92 C 28 72 22 48 8 28 C 18 38 32 42 42 32 C 52 22 48 8 28 8 C 48 12 62 28 72 42 C 82 56 88 72 92 88" stroke="rgba(214,173,99,0.4)" stroke-width="1.2" stroke-linecap="round"></path>
+            <path d="M18 88 C 32 74 30 58 22 44 M 38 82 C 48 70 46 58 40 50" stroke="rgba(214,173,99,0.25)" stroke-width="0.9" stroke-linecap="round"></path>
+            <circle cx="24" cy="24" r="3" fill="rgba(214,173,99,0.3)"></circle>
+          </svg>
+
+          <span class="hero-script-tag">Mister Bnine • Dcheira El Jihadia</span>
           
-          <!-- Content Left -->
-          <div class="hero-content">
-            <div class="eyebrow-badge">
-              <span class="dot"></span>
-              <span>Dcheira El Jihadia • Avenue Al Mourabitin</span>
-            </div>
+          <h1 class="hero-main-title">
+            Découvrez l'authenticité culinaire<br>
+            <span>au cœur de Dcheira El Jihadia</span>
+          </h1>
 
-            <h1 class="hero-title">
-              Le Sanctuaire du <span class="highlight">Goût Savoureux</span> à Dcheira.
-            </h1>
+          <p class="hero-desc">
+            Pizzas artisanales cuites dans notre four à bois traditionnel, viandes marinées grillées, tacos gratinés ultra-généreux et salades fraîches au 117 Avenue Al Mourabitin.
+          </p>
 
-            <p class="hero-subtitle">
-              Pizzas cuites dans notre four à bois traditionnel, Tacos généreux, Sandwichs rolls signature, Burgers gourmets et salades fraîches assemblées chaque matin.
-            </p>
-
-            <p class="arabic-text" style="font-size: 1.15rem; color: var(--accent-gold); font-weight: 600;">
-              مـسـتـر بـنـيـن • الـبـنـة كـتـعـيـط لـبـنـة، كـل نـهـار طـري ولـذيـذ!
-            </p>
-
-            <div class="hero-actions">
-              <a href="https://wa.me/212665638487?text=Salam%20Mister%20Bnine%20!%20Je%20souhaite%20commander" target="_blank" rel="noopener" class="btn-primary">
-                <span>Commander sur WhatsApp</span>
-                <span class="btn-icon-circle">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                  </svg>
-                </span>
-              </a>
-
-              <a href="menu.html" class="btn-secondary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                </svg>
-                <span>Explorer le Menu Officiel</span>
-              </a>
-            </div>
-
-            <!-- Quick Info Strip -->
-            <div class="hero-badges-strip">
-              <div class="hero-badge-item">
-                <div class="badge-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                  </svg>
-                </div>
-                <div class="badge-text-group">
-                  <div class="b-label">Note Google Maps</div>
-                  <div class="b-value">4.4 ★ (145+ Avis)</div>
-                </div>
-              </div>
-
-              <div class="hero-badge-item">
-                <div class="badge-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div class="badge-text-group">
-                  <div class="b-label">Horaires de Service</div>
-                  <div class="b-value">12:00 – 00:30 (7j/7)</div>
-                </div>
-              </div>
-
-              <div class="hero-badge-item">
-                <div class="badge-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div class="badge-text-group">
-                  <div class="b-label">Adresse Réelle</div>
-                  <div class="b-value">117 Hay Le Mers, Dcheira</div>
-                </div>
-              </div>
-            </div>
-
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">Ouvert actuellement • Service continu jusqu'à 00:30</span>
           </div>
 
-          <!-- Visual Right: Real Restaurant Dining Room Photo -->
-          <div class="hero-visual">
-            <div class="doppelrand-card hero-main-card">
-              <div class="doppelrand-inner" style="padding:0; overflow:hidden;">
-                <div class="hero-media-wrap">
-                  <img src="assets/photos/place_interior_main.jpg" alt="Vraie salle du Restaurant Mister Bnine à Dcheira">
-                  
-                  <!-- Live Status Floating Pill -->
-                  <div class="floating-pill-badge live-status-badge">
-                    <span class="live-status-dot"></span>
-                    <span class="status-text">Ouvert actuellement</span>
-                  </div>
-
-                  <div class="hero-media-overlay">
-                    <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.15em; color:var(--accent-gold); font-weight:700;">Notre Restaurant à Dcheira</div>
-                    <div style="font-size:1.35rem; font-weight:800; color:#FFFFFF;">Salle climatisée, mezzanine et terrasse</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Floating Authentic Pizza Oven Badge -->
-            <div class="hero-floating-stat" style="bottom:-24px; right:-15px;">
-              <div style="width:48px; height:48px; border-radius:12px; overflow:hidden; flex-shrink:0; border:1px solid var(--accent-gold);">
-                <img src="assets/photos/place_pizza_oven.jpg" alt="Four à bois Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-              </div>
-              <div>
-                <div style="font-size:0.75rem; color:var(--accent-gold); font-weight:700;">Four au Feu de Bois</div>
-                <div style="font-size:0.95rem; font-weight:800; color:#FFFFFF;">Pizzas Fraîches Cuites sur Pierre</div>
-              </div>
-            </div>
+          <div class="hero-cta-group">
+            <a href="reservation.html" class="btn-gold">
+              <span>Réserver une table</span>
+              <span>↗</span>
+            </a>
+            <a href="menu.html" class="btn-gold-outline">
+              <span>Consulter la carte</span>
+              <span>📖</span>
+            </a>
+            <a href="menu-book.html" class="btn-gold-outline">
+              <span>Notre Carte Book</span>
+              <span>🔍</span>
+            </a>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         OFFICIAL AFFICHE & OFFRES SPECIALES SPOTLIGHT
+         DIVIDER WORDMARK TICKER (AL WALIMA SIGNATURE MARQUEE)
          ========================================================================== -->
-    <section class="section" style="padding-top:20px; padding-bottom:60px;">
-      <div class="container">
-        
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px;">
-          
-          <!-- Promo Lundi au Jeudi -->
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner" style="flex-direction:row; gap:20px; align-items:center;">
-              <div style="width:110px; height:110px; border-radius:16px; overflow:hidden; flex-shrink:0;">
-                <img src="assets/photos/affiche_promo_pizza.jpg" alt="Offre Promo Pizza Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-              </div>
-              <div>
-                <div class="eyebrow-badge" style="font-size:0.68rem; padding:4px 10px; margin-bottom:8px;">Offre Semaine</div>
-                <h3 style="font-size:1.15rem; margin-bottom:4px;">1 Pizza Achetée = 1 Offerte</h3>
-                <p style="font-size:0.85rem; color:var(--text-secondary);">Valable du lundi au jeudi sur nos pizzas artisanales cuites au feu de bois.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Couscous Vendredi -->
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner" style="flex-direction:row; gap:20px; align-items:center;">
-              <div style="width:110px; height:110px; border-radius:16px; overflow:hidden; flex-shrink:0;">
-                <img src="assets/photos/affiche_couscous_vendredi.jpg" alt="Couscous Vendredi Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-              </div>
-              <div>
-                <div class="eyebrow-badge" style="font-size:0.68rem; padding:4px 10px; margin-bottom:8px;">Chaque Vendredi</div>
-                <h3 style="font-size:1.15rem; margin-bottom:4px;">Couscous Royal Traditionnel</h3>
-                <p style="font-size:0.85rem; color:var(--text-secondary);">كسكس بالسبع خضار ولحم طري، مجهز بكل حب لكل عائلات دشيرة.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carte Officielle -->
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner" style="flex-direction:row; gap:20px; align-items:center;">
-              <div style="width:110px; height:110px; border-radius:16px; overflow:hidden; flex-shrink:0; border:1px solid var(--border-glow);">
-                <img src="assets/photos/affiche_menu_exact.jpg" alt="Affiche Menu Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-              </div>
-              <div>
-                <div class="eyebrow-badge" style="font-size:0.68rem; padding:4px 10px; margin-bottom:8px;">Menu Officiel</div>
-                <h3 style="font-size:1.15rem; margin-bottom:4px;">Salades & Sandwiches</h3>
-                <p style="font-size:0.85rem; color:var(--text-secondary);">À partir de 30 DH. Pains au choix : Pain Chika, Pain Aïch ou Tortilla.</p>
-              </div>
-            </div>
-          </div>
-
+    <div class="divider-wordmark-viewport" aria-hidden="true">
+      <div class="divider-wordmark-track">
+        <div class="divider-wordmark-strip">
+          <span class="wordmark-item">MISTER BNINE <span class="gold-star">★</span></span>
+          <span class="wordmark-item">RESTAURANT & FAST-FOOD <span class="gold-star">★</span></span>
+          <span class="wordmark-item">FOUR AU FEU DE BOIS <span class="gold-star">★</span></span>
+          <span class="wordmark-item">DCHEIRA EL JIHADIA <span class="gold-star">★</span></span>
+          <span class="wordmark-item">PIZZAS & GRILLADES <span class="gold-star">★</span></span>
+          <span class="wordmark-item">مـسـتـر بـنـيـن <span class="gold-star">★</span></span>
+          <span class="wordmark-item">HAY LE MERS <span class="gold-star">★</span></span>
+          <span class="wordmark-item">100% FRAÎCHEUR & HALAL <span class="gold-star">★</span></span>
         </div>
-
+        <div class="divider-wordmark-strip">
+          <span class="wordmark-item">MISTER BNINE <span class="gold-star">★</span></span>
+          <span class="wordmark-item">RESTAURANT & FAST-FOOD <span class="gold-star">★</span></span>
+          <span class="wordmark-item">FOUR AU FEU DE BOIS <span class="gold-star">★</span></span>
+          <span class="wordmark-item">DCHEIRA EL JIHADIA <span class="gold-star">★</span></span>
+          <span class="wordmark-item">PIZZAS & GRILLADES <span class="gold-star">★</span></span>
+          <span class="wordmark-item">مـسـتـر بـنـيـن <span class="gold-star">★</span></span>
+          <span class="wordmark-item">HAY LE MERS <span class="gold-star">★</span></span>
+          <span class="wordmark-item">100% FRAÎCHEUR & HALAL <span class="gold-star">★</span></span>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- ==========================================================================
-         ACTUAL DISHES HIGHLIGHTS (EXACT PHOTOS & PRICES)
+         BIENVENUE SECTION (AL WALIMA MOORISH ARCHED PILLARS)
          ========================================================================== -->
-    <section class="section" id="menu-section" style="background: rgba(255,255,255,0.01);">
+    <section class="welcome-section" id="welcome">
+      <div class="moroccan-ornament" style="position:absolute; inset:0;"></div>
+      <div class="arabic-watermark">مستر بنين</div>
+
       <div class="container">
-        
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px;">
-          <div>
-            <div class="eyebrow-badge">
-              <span class="dot"></span>
-              <span>Nos Vrais Plats Cuisinés</span>
-            </div>
-            <h2 style="font-size: 2.6rem; margin-top: 14px;">Les Plats Phares de Mister Bnine</h2>
-            <p style="color:var(--text-secondary); margin-top:6px;">Photos réelles de nos créations servies au restaurant.</p>
-          </div>
-
-          <a href="menu.html" class="btn-secondary">
-            <span>Voir toute la carte officielle</span>
-            <span>→</span>
-          </a>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="menu-nav-tabs">
-          <button class="menu-tab-btn active" data-filter="all">Tous les Plats</button>
-          <button class="menu-tab-btn" data-filter="tacos">🌮 Tacos & Wraps</button>
-          <button class="menu-tab-btn" data-filter="pizza">🍕 Pizzas au Feu de Bois</button>
-          <button class="menu-tab-btn" data-filter="sandwich">🥪 Sandwiches Roll & Shawarma</button>
-          <button class="menu-tab-btn" data-filter="burger">🍔 Burgers Gourmets</button>
-          <button class="menu-tab-btn" data-filter="salade">🥗 Salades Fraîches</button>
-          <button class="menu-tab-btn" data-filter="boisson">🥤 Boissons & Za3za3</button>
-        </div>
-
-        <!-- Grid of Highlights -->
-        <div class="menu-grid">
-          
-          <!-- 1. Tacos Mister Bnine Combo -->
-          <div class="doppelrand-card menu-card" data-category="tacos">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_tacos_combo.jpg" alt="Vrai Tacos Mister Bnine">
-                <span class="item-badge">Best-Seller</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Tacos Mister Bnine</h3>
-                <span class="item-price">35 DH</span>
-              </div>
-              <p class="item-description">
-                Tortilla grillée garnie d'escalope ou viande hachée, frites dorées, sauce fromagère onctueuse maison. Servi avec frites.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Format standard • Frites incluses</span>
-                <button class="btn-add-cart" data-id="tacos-35" data-name="Tacos Mister Bnine" data-price="35">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2. Pizza Artisanale Four à Bois -->
-          <div class="doppelrand-card menu-card" data-category="pizza">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_pizza_artisanale.jpg" alt="Vraie Pizza au feu de bois Mister Bnine">
-                <span class="item-badge">Four à Bois</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Pizza Reine aux Champignons</h3>
-                <span class="item-price">45 DH</span>
-              </div>
-              <p class="item-description">
-                Pâte fraîche cuite sur la pierre de notre four à bois, sauce tomate mijotée, mozzarella fondante et généreux champignons frais.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Cuisson traditionnelle sur pierre</span>
-                <button class="btn-add-cart" data-id="pizza-reine-45" data-name="Pizza Reine aux Champignons" data-price="45">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. Sandwiche Roll Plated -->
-          <div class="doppelrand-card menu-card" data-category="sandwich">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_sandwich_roll_plated.jpg" alt="Sandwiche Roll Mister Bnine">
-                <span class="item-badge">Signature</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Sandwiche Roll Croustillant</h3>
-                <span class="item-price">35 DH</span>
-              </div>
-              <p class="item-description">
-                Frites, fromage coulant, dinde fumée, poulet crispy pané, sauce au choix. Tranché et dressé sur assiette avec frites.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Pain au choix • Frites incluses</span>
-                <button class="btn-add-cart" data-id="sandwich-roll-35" data-name="Sandwiche Roll Croustillant" data-price="35">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4. Salade Mister Bnine Signature -->
-          <div class="doppelrand-card menu-card" data-category="salade">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_salade_mister_bnine.jpg" alt="Salade Mister Bnine dans barquette barque">
-                <span class="item-badge">Spécialité</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Salade Mister Bnine</h3>
-                <span class="item-price">45 DH</span>
-              </div>
-              <p class="item-description">
-                Salade verte fraîche, saumon, fromage gouda, carotte râpée, tomate cerise, tranches d'avocat mûr, mangue et sauce maison.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Assemblage minute le matin</span>
-                <button class="btn-add-cart" data-id="salade-bnine-45" data-name="Salade Mister Bnine" data-price="45">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. Classic Shawarma -->
-          <div class="doppelrand-card menu-card" data-category="sandwich">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_shawarma_roll.jpg" alt="Classic Shawarma Mister Bnine">
-                <span class="item-badge">Nouveau</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Classic Shawarma</h3>
-                <span class="item-price">30 DH</span>
-              </div>
-              <p class="item-description">
-                Pain libanais, chawarma au poulet mariné aux épices, salade verte, quelques rondelles d'oignons, cornichon et sauce Toum.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Pain Chika, Aïch ou Tortilla</span>
-                <button class="btn-add-cart" data-id="shawarma-30" data-name="Classic Shawarma" data-price="30">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6. Gourmet Tower Burger -->
-          <div class="doppelrand-card menu-card" data-category="burger">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_burger_gourmet.jpg" alt="Gourmet Tower Burger Mister Bnine">
-                <span class="item-badge">Gourmet</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Tower Burger Gourmet</h3>
-                <span class="item-price">45 DH</span>
-              </div>
-              <p class="item-description">
-                Pain brioché aux graines, étage poulet croustillant façon tenders + steak pur bœuf, double cheddar, tomates et sauce maison.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Gourmet Smash • Frites</span>
-                <button class="btn-add-cart" data-id="burger-tower-45" data-name="Tower Burger Gourmet" data-price="45">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 7. Salade Niçoise -->
-          <div class="doppelrand-card menu-card" data-category="salade">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/plat_salade_nicoise.jpg" alt="Vraie Salade Nicoise Mister Bnine">
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Salade Niçoise</h3>
-                <span class="item-price">30 DH</span>
-              </div>
-              <p class="item-description">
-                Salade verte, tomate cerise, thon, œufs durs, pommes de terre, concombres, betteraves, haricots verts, maïs et mayonnaise.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Ultra complète et fraîche</span>
-                <button class="btn-add-cart" data-id="salade-nicoise-30" data-name="Salade Niçoise" data-price="30">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 8. Boisson Za3za3 Avocat -->
-          <div class="doppelrand-card menu-card" data-category="boisson">
-            <div class="doppelrand-inner">
-              <div class="menu-item-media">
-                <img src="assets/photos/boisson_za3za3_avocat.jpg" alt="Smoothie Za3za3 Avocat Mister Bnine">
-                <span class="item-badge">Énergie</span>
-              </div>
-              <div class="menu-item-header">
-                <h3 class="item-name">Smoothie Za3za3 Avocat</h3>
-                <span class="item-price">25 DH</span>
-              </div>
-              <p class="item-description">
-                Avocat onctueux mixé avec du lait frais, garni de fruits secs, amandes, noix, raisins secs et chocolat.
-              </p>
-              <div class="menu-item-footer">
-                <span style="font-size:0.78rem; color:var(--text-muted);">Grande chope rafraîchissante</span>
-                <button class="btn-add-cart" data-id="za3za3-25" data-name="Smoothie Za3za3 Avocat" data-price="25">
-                  <span>Ajouter</span>
-                  <span>+</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         GALERIE RÉELLE DU RESTAURANT & DE L'ESPACE
-         ========================================================================== -->
-    <section class="section" id="galerie-section">
-      <div class="container">
-        <div style="text-align: center; max-width: 680px; margin: 0 auto 40px;">
-          <div class="eyebrow-badge">
-            <span class="dot"></span>
-            <span>Photos Réelles des Lieux</span>
-          </div>
-          <h2 style="font-size: 2.5rem; margin-top: 14px;">L'Ambiance Mister Bnine</h2>
-          <p style="color: var(--text-secondary); margin-top: 8px;">
-            Un cadre chaleureux, moderne et propre, situé au 117 Avenue Al Mourabitin à Dcheira El Jihadia.
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Hospitalité & Passion Gourmande</span>
+          <h2 class="section-title-display">Bienvenue chez Mister Bnine</h2>
+          <p class="section-desc-lead">
+            Au 117 Avenue Al Mourabitin, nous combinons l'authenticité de la cuisson au feu de bois avec l'exigence de la restauration moderne pour régaler toute la famille.
           </p>
         </div>
 
-        <div style="display:grid; grid-template-columns:repeat(12, 1fr); gap:20px;">
-          <!-- Photo 1: Big Interior -->
-          <div style="grid-column: span 7;" class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:340px;">
-              <img src="assets/photos/place_interior_main.jpg" alt="Salle de restauration Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
+        <div class="welcome-pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-arch-header">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2c-4 4-6 8-6 12 0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-2-8-6-12z"></path>
+                <path d="M12 10c-2 2-3 4-3 6 0 2.2 1.8 4 4 4s4-1.8 4-4c0-2-1-4-3-6z" fill="currentColor" fill-opacity="0.3"></path>
+              </svg>
             </div>
+            <h3 class="pillar-title">Cuisine au Feu de Bois</h3>
+            <p class="pillar-desc">
+              Pièce maîtresse de notre établissement, notre four traditionnel noir gravé de l'emblème doré « MB » cuit nos pizzas sur pierre réfractaire pour une pâte aérée, légère et subtilement fumée.
+            </p>
           </div>
 
-          <!-- Photo 2: Pizza Oven with Logo -->
-          <div style="grid-column: span 5;" class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:340px;">
-              <img src="assets/photos/place_pizza_oven.jpg" alt="Four à pizza au feu de bois avec logo MB" style="width:100%; height:100%; object-fit:cover;">
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-arch-header">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
             </div>
+            <h3 class="pillar-title">Ambiance Chaleureuse</h3>
+            <p class="pillar-desc">
+              Un cadre soigné, climatisé et propre, doté d'une salle principale conviviale et d'un étage mezzanine intimiste idéal pour les repas en famille, entre collègues ou entre amis.
+            </p>
           </div>
 
-          <!-- Photo 3: Mezzanine Floor -->
-          <div style="grid-column: span 4;" class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:240px;">
-              <img src="assets/photos/place_mezzanine.jpg" alt="Étage mezzanine Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-arch-header">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
             </div>
-          </div>
-
-          <!-- Photo 4: Ground floor & Counter -->
-          <div style="grid-column: span 4;" class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:240px;">
-              <img src="assets/photos/place_counter.jpg" alt="Comptoir et accueil Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-            </div>
-          </div>
-
-          <!-- Photo 5: Official Menu Board Affiche -->
-          <div style="grid-column: span 4;" class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:0; overflow:hidden; height:240px;">
-              <img src="assets/photos/affiche_menu_exact.jpg" alt="Affiche officielle du menu Mister Bnine" style="width:100%; height:100%; object-fit:cover;">
-            </div>
+            <h3 class="pillar-title">Service Attentionné</h3>
+            <p class="pillar-desc">
+              Un accueil chaleureux avec le sourire, une écoute personnalisée, la commande directe en 1 clic sur WhatsApp et une livraison rapide à domicile à Dcheira, Inezgane et Tassila.
+            </p>
           </div>
         </div>
 
@@ -608,146 +305,501 @@
     </section>
 
     <!-- ==========================================================================
-         INSTAGRAM REELS SHOWCASE (@restaurant_misterbnine)
+         AWARDS & RECOGNITION (AL WALIMA GURU / GOOGLE SEAL)
          ========================================================================== -->
-    <section class="section" id="reels-section" style="background: linear-gradient(180deg, transparent, rgba(229,169,60,0.03) 50%, transparent 100%);">
+    <section class="award-banner">
       <div class="container">
-        
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:20px;">
-          <div style="max-width: 620px;">
-            <div class="eyebrow-badge">
-              <span class="dot"></span>
-              <span>En Direct d'Instagram</span>
+        <div class="award-content">
+          <div class="award-badge-box">
+            <div class="award-star-badge">★ 4.4</div>
+            <div class="award-text" style="text-align:left;">
+              <h4>Avis Vérifiés Google Maps</h4>
+              <p>Plus de 145 avis authentiques de clients locaux et voyageurs</p>
             </div>
-            <h2 style="font-size: 2.5rem; margin-top: 14px;">Nos Reels & Vidéos Officielles</h2>
-            <p style="color: var(--text-secondary); margin-top: 8px;">
-              Suivez le quotidien de la cuisine, la cuisson au feu de bois et nos arrivages frais sur le compte officiel <strong style="color:#FFF;">@restaurant_misterbnine</strong>.
-            </p>
           </div>
 
-          <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" class="btn-instagram">
+          <div class="award-badge-box">
+            <div class="award-star-badge">🏆</div>
+            <div class="award-text" style="text-align:left;">
+              <h4>Recommandé à Dcheira El Jihadia</h4>
+              <p>Référence gastronomique pour les pizzas au feu de bois et tacos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         AVIS GOOGLE (DUAL-TRACK INFINITE MARQUEE)
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Ce Que Disent Nos Clients</span>
+          <h2 class="section-title-display">Avis & Témoignages Google</h2>
+          <p class="section-desc-lead">Des retours authentiques de clients qui partagent leur expérience chez Mister Bnine.</p>
+        </div>
+      </div>
+
+      <div class="reviews-marquee-viewport" aria-label="Témoignages défilants">
+        <!-- Track 1: Moving Left -->
+        <div class="reviews-marquee-track-left">
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Youssef Amrani</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Franchement le meilleur tacos et sandwich roll de Dcheira El Jihadia. La sauce fromagère est super bonne, bien dosée et pas écœurante. Le service est très rapide et les gars sont hyper accueillants !"
+            </p>
+            <div class="review-footer-tag">Client local • Dcheira Hay Le Mers</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Sara Mansouri</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "J'ai testé leur pizza au feu de bois hier soir et c'était un régal absolu. Pâte fine bien cuite avec le logo gravé sur le four à pizza ! Rapport qualité-prix imbattable à Inezgane et Dcheira."
+            </p>
+            <div class="review-footer-tag">Avis Google Maps vérifié</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Karim Benali</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Livraison en 25 minutes chrono à Hay Le Mers. Les sandwichs et frites étaient encore tout chauds et croustillants. Bravo l'équipe Mister Bnine !"
+            </p>
+            <div class="review-footer-tag">Commande WhatsApp Direct</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Fatima Ezzahra</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Le cadre est très propre et la mezzanine est parfaite pour manger tranquillement en famille. Les salades sont bien fraîches et généreuses. Je recommande les yeux fermés."
+            </p>
+            <div class="review-footer-tag">Visite en famille • Sur place</div>
+          </div>
+
+          <!-- Duplicate for seamless loop -->
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Youssef Amrani</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Franchement le meilleur tacos et sandwich roll de Dcheira El Jihadia. La sauce fromagère est super bonne, bien dosée et pas écœurante. Le service est très rapide et les gars sont hyper accueillants !"
+            </p>
+            <div class="review-footer-tag">Client local • Dcheira Hay Le Mers</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Sara Mansouri</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "J'ai testé leur pizza au feu de bois hier soir et c'était un régal absolu. Pâte fine bien cuite avec le logo gravé sur le four à pizza ! Rapport qualité-prix imbattable à Inezgane et Dcheira."
+            </p>
+            <div class="review-footer-tag">Avis Google Maps vérifié</div>
+          </div>
+        </div>
+
+        <!-- Track 2: Moving Right -->
+        <div class="reviews-marquee-track-right">
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Mehdi Tazi</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Les burgers au four sont un délice unique. Le pain brioché toasté et les tenders croustillants font toute la différence. Meilleur snack d'Avenue Al Mourabitin."
+            </p>
+            <div class="review-footer-tag">Habitant Dcheira</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Samira Ouahbi</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "La salade Mister Bnine avec mangue, avocat et saumon est extraordinaire. On sent des produits coupés du jour et des assaisonnements maison soignés."
+            </p>
+            <div class="review-footer-tag">Avis Google vérifié</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Hassan Berrada</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Offre pizza du lundi au jeudi imbattable (2 pizzas = 1 offerte). On a mangé à 4 pour moins de 100 DH et tout le monde était calé. Chapeau l'équipe !"
+            </p>
+            <div class="review-footer-tag">Commande de groupe</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Rachid Ait Daoud</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Couscous du vendredi succulent ! Viande fondante et légumes bien cuits. On sent la générosité et l'amour de la vraie cuisine marocaine."
+            </p>
+            <div class="review-footer-tag">Tradition du Vendredi</div>
+          </div>
+
+          <!-- Duplicate for seamless loop -->
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Mehdi Tazi</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "Les burgers au four sont un délice unique. Le pain brioché toasté et les tenders croustillants font toute la différence. Meilleur snack d'Avenue Al Mourabitin."
+            </p>
+            <div class="review-footer-tag">Habitant Dcheira</div>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-header-row">
+              <span class="review-user-name">Samira Ouahbi</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-quote-text">
+              "La salade Mister Bnine avec mangue, avocat et saumon est extraordinaire. On sent des produits coupés du jour et des assaisonnements maison soignés."
+            </p>
+            <div class="review-footer-tag">Avis Google vérifié</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PLATS SIGNATURES (AL WALIMA CARDS SHOWCASE)
+         ========================================================================== -->
+    <section class="signatures-section" id="signatures">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Sélection du Chef</span>
+          <h2 class="section-title-display">Nos Plats Signatures</h2>
+          <p class="section-desc-lead">Des recettes artisanales élaborées chaque jour avec des ingrédients frais du terroir marocain.</p>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- Dish 1: Pizza Reine -->
+          <div class="dish-card">
+            <div class="dish-img-wrap">
+              <img src="assets/photos/plat_pizza_artisanale.jpg" alt="Pizza Reine au four à bois Mister Bnine">
+              <span class="dish-badge-pill">Four à Bois</span>
+            </div>
+            <div class="dish-content">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Pizza Reine au Feu de Bois</h3>
+                <span class="dish-price">45 DH</span>
+              </div>
+              <p class="dish-desc">
+                Pâte fermentée cuite sur pierre réfractaire, coulis de tomates fraîches, mozzarella fior di latte fondante, champignons de Paris frais et dinde fumée.
+              </p>
+              <div class="dish-footer-row">
+                <span class="dish-prep-tag">Cuisson minute • 2=1 Lun-Jeu</span>
+                <button class="btn-add-item" data-id="pizza-reine-45" data-name="Pizza Reine au Feu de Bois" data-price="45">
+                  <span>Commander</span>
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 2: Tower Burger -->
+          <div class="dish-card">
+            <div class="dish-img-wrap">
+              <img src="assets/photos/plat_burger_gourmet.jpg" alt="Tower Burger Gourmet Mister Bnine">
+              <span class="dish-badge-pill">Gourmet</span>
+            </div>
+            <div class="dish-content">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Tower Burger Gourmet</h3>
+                <span class="dish-price">45 DH</span>
+              </div>
+              <p class="dish-desc">
+                Pain brioché aux graines dorées, étage tenders extra-croustillants + steak pur bœuf assaisonné, double cheddar affiné et sauce barbecue fumée.
+              </p>
+              <div class="dish-footer-row">
+                <span class="dish-prep-tag">Servi avec frites dorées</span>
+                <button class="btn-add-item" data-id="burger-tower-45" data-name="Tower Burger Gourmet" data-price="45">
+                  <span>Commander</span>
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 3: Sandwiche Roll -->
+          <div class="dish-card">
+            <div class="dish-img-wrap">
+              <img src="assets/photos/plat_sandwich_roll_plated.jpg" alt="Sandwiche Roll Mister Bnine">
+              <span class="dish-badge-pill">Top Vente</span>
+            </div>
+            <div class="dish-content">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Sandwiche Roll Spécial</h3>
+                <span class="dish-price">35 DH</span>
+              </div>
+              <p class="dish-desc">
+                Poulet pané crispy, dinde fumée, frites croustillantes et fromage fondu roulés dans un pain toasté minute. Tranché et dressé avec soin.
+              </p>
+              <div class="dish-footer-row">
+                <span class="dish-prep-tag">Pain Chika, Aïch ou Tortilla</span>
+                <button class="btn-add-item" data-id="sandwich-roll-35" data-name="Sandwiche Roll Spécial" data-price="35">
+                  <span>Commander</span>
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 4: Tacos Double Viande -->
+          <div class="dish-card">
+            <div class="dish-img-wrap">
+              <img src="assets/photos/plat_tacos_coupe.jpg" alt="Tacos Double Viande Gratiné">
+              <span class="dish-badge-pill">Ultra Généreux</span>
+            </div>
+            <div class="dish-content">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Tacos Double Gratiné</h3>
+                <span class="dish-price">45 DH</span>
+              </div>
+              <p class="dish-desc">
+                Double portion d'escalope marinée et viande hachée, frites dorées, sauce fromagère onctueuse maison et gratiné de mozzarella au four.
+              </p>
+              <div class="dish-footer-row">
+                <span class="dish-prep-tag">Gratiné au four traditionnel</span>
+                <button class="btn-add-item" data-id="tacos-double-45" data-name="Tacos Double Gratiné" data-price="45">
+                  <span>Commander</span>
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 5: Salade Mister Bnine -->
+          <div class="dish-card">
+            <div class="dish-img-wrap">
+              <img src="assets/photos/plat_salade_mister_bnine.jpg" alt="Salade Royale Mister Bnine">
+              <span class="dish-badge-pill">Signature</span>
+            </div>
+            <div class="dish-content">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Salade Royale Mister Bnine</h3>
+                <span class="dish-price">45 DH</span>
+              </div>
+              <p class="dish-desc">
+                Salade verte croquante, tranches de saumon, fromage gouda, dés d'avocat mûr, mangue parfumée, carottes râpées et vinaigrette du chef.
+              </p>
+              <div class="dish-footer-row">
+                <span class="dish-prep-tag">Découpée le matin même</span>
+                <button class="btn-add-item" data-id="salade-bnine-45" data-name="Salade Royale Mister Bnine" data-price="45">
+                  <span>Commander</span>
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 6: Smoothie Za3za3 -->
+          <div class="dish-card">
+            <div class="dish-img-wrap">
+              <img src="assets/photos/boisson_za3za3_avocat.jpg" alt="Smoothie Za3za3 Avocat Frais">
+              <span class="dish-badge-pill">Énergie Pure</span>
+            </div>
+            <div class="dish-content">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Smoothie Za3za3 Avocat</h3>
+                <span class="dish-price">25 DH</span>
+              </div>
+              <p class="dish-desc">
+                Purée d'avocat onctueuse au lait frais, garnie de cerneaux de noix, amandes concassées, raisins secs et coulis gourmand au chocolat.
+              </p>
+              <div class="dish-footer-row">
+                <span class="dish-prep-tag">Grande chope glacée</span>
+                <button class="btn-add-item" data-id="za3za3-25" data-name="Smoothie Za3za3 Avocat" data-price="25">
+                  <span>Commander</span>
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:48px;">
+          <a href="menu.html" class="btn-gold">
+            <span>Voir toute la carte complète (17 plats)</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         L'EXPÉRIENCE MISTER BNINE (AL WALIMA ASYMMETRIC GALLERY)
+         ========================================================================== -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Atmosphère & Art de Recevoir</span>
+          <h2 class="section-title-display">L'Expérience Mister Bnine</h2>
+          <p class="section-desc-lead">
+            Pénétrez au sein de notre restaurant situé sur l'Avenue Al Mourabitin : un espace moderne, lumineux et impeccablement entretenu.
+          </p>
+        </div>
+
+        <div class="gallery-mosaic-grid">
+          <!-- Item 1: Main Dining Room (Big 7 cols) -->
+          <div class="mosaic-item" style="grid-column: span 7; height: 360px;">
+            <img src="assets/photos/place_interior_main.jpg" alt="Salle de restauration principale Mister Bnine">
+            <div class="mosaic-caption">La Salle Principale Climatisée</div>
+          </div>
+
+          <!-- Item 2: Wood Pizza Oven (5 cols) -->
+          <div class="mosaic-item" style="grid-column: span 5; height: 360px;">
+            <img src="assets/photos/place_pizza_oven.jpg" alt="Four à bois avec logo MB">
+            <div class="mosaic-caption">Le Four à Pierre Traditionnel « MB »</div>
+          </div>
+
+          <!-- Item 3: Mezzanine (4 cols) -->
+          <div class="mosaic-item" style="grid-column: span 4; height: 260px;">
+            <img src="assets/photos/place_mezzanine.jpg" alt="Étage mezzanine Mister Bnine">
+            <div class="mosaic-caption">L'Étage Mezzanine Convivial</div>
+          </div>
+
+          <!-- Item 4: Counter (4 cols) -->
+          <div class="mosaic-item" style="grid-column: span 4; height: 260px;">
+            <img src="assets/photos/place_counter.jpg" alt="Comptoir d'accueil Mister Bnine">
+            <div class="mosaic-caption">Comptoir & Accueil Chaleureux</div>
+          </div>
+
+          <!-- Item 5: Official Menu Board (4 cols) -->
+          <div class="mosaic-item" style="grid-column: span 4; height: 260px;">
+            <img src="assets/photos/affiche_menu_exact.jpg" alt="Carte officielle affichée en salle">
+            <div class="mosaic-caption">La Carte Officielle en Salle</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         REELS INSTAGRAM SHOWCASE (@restaurant_misterbnine)
+         ========================================================================== -->
+    <section class="reels-section" id="reels">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:20px;">
+          <div>
+            <span class="section-script-subtitle">En Direct d'Instagram</span>
+            <h2 class="section-title-display">Nos Reels & Vidéos Officielles</h2>
+            <p class="section-desc-lead">Suivez la préparation en cuisine, la cuisson au feu de bois et nos arrivages frais sur Instagram.</p>
+          </div>
+
+          <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" class="btn-instagram-follow">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
             <span>@restaurant_misterbnine</span>
-            <span style="font-size:0.8rem; opacity:0.9;">↗</span>
+            <span>↗</span>
           </a>
         </div>
 
         <div class="reels-grid">
-          
-          <!-- Reel 1: Pizza au feu de bois -->
-          <a href="https://www.instagram.com/reel/DLa0SwPNHYu/" target="_blank" rel="noopener" class="reel-card" title="Regarder le Reel Pizza au Feu de Bois">
+          <!-- Reel 1: Pizza Feu de Bois -->
+          <a href="https://www.instagram.com/reel/DLa0SwPNHYu/" target="_blank" rel="noopener" class="reel-card" title="Voir le Reel Pizza au feu de bois">
             <div class="reel-aspect">
-              <img src="assets/instagram/reel_cover_9.jpg" alt="Pizza au feu de bois Mister Bnine" loading="lazy">
+              <img src="assets/instagram/reel_cover_9.jpg" alt="Pizza au feu de bois Mister Bnine">
               <div class="reel-play-btn" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
               <div class="reel-overlay">
-                <div class="reel-top-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  </svg>
-                  <span>Reel Officiel</span>
-                </div>
-                <div class="reel-info">
-                  <span class="reel-tag">Four à Bois • Pierre</span>
-                  <div class="reel-title">Pizza au feu de bois croustillante</div>
-                  <div class="reel-cta-row">
+                <div class="reel-top-badge">Reel Officiel</div>
+                <div>
+                  <div class="reel-info-tag">Four à Bois • Pierre</div>
+                  <div class="reel-info-title">Pizza artisanale croustillante</div>
+                  <div class="reel-info-footer">
                     <span>@restaurant_misterbnine</span>
-                    <span class="reel-cta-action">Voir la vidéo ↗</span>
+                    <span style="color:var(--gold-primary);">Voir la vidéo ↗</span>
                   </div>
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Reel 2: Wood-Oven Burgers -->
-          <a href="https://www.instagram.com/reel/DMK0tEptO9K/" target="_blank" rel="noopener" class="reel-card" title="Regarder le Reel Burgers au four">
+          <!-- Reel 2: Burgers au Four -->
+          <a href="https://www.instagram.com/reel/DMK0tEptO9K/" target="_blank" rel="noopener" class="reel-card" title="Voir le Reel Burgers au four">
             <div class="reel-aspect">
-              <img src="assets/instagram/reel_cover_4.jpg" alt="Tower Burgers Mister Bnine" loading="lazy">
+              <img src="assets/instagram/reel_cover_4.jpg" alt="Burgers au four Mister Bnine">
               <div class="reel-play-btn" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
               <div class="reel-overlay">
-                <div class="reel-top-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  </svg>
-                  <span>Reel Officiel</span>
-                </div>
-                <div class="reel-info">
-                  <span class="reel-tag">Gourmet • Grillades</span>
-                  <div class="reel-title">Burgers gourmets cuits au four</div>
-                  <div class="reel-cta-row">
+                <div class="reel-top-badge">Reel Officiel</div>
+                <div>
+                  <div class="reel-info-tag">Burgers • Cuisson Four</div>
+                  <div class="reel-info-title">Tower Burgers & Tenders dorés</div>
+                  <div class="reel-info-footer">
                     <span>Matfekrch, aji commandi!</span>
-                    <span class="reel-cta-action">Voir la vidéo ↗</span>
+                    <span style="color:var(--gold-primary);">Voir la vidéo ↗</span>
                   </div>
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Reel 3: Welcome & Mascot -->
-          <a href="https://www.instagram.com/reel/DJQFMMEIscs/" target="_blank" rel="noopener" class="reel-card" title="Regarder le Reel Bienvenue">
+          <!-- Reel 3: Bienvenue & Mascotte -->
+          <a href="https://www.instagram.com/reel/DJQFMMEIscs/" target="_blank" rel="noopener" class="reel-card" title="Voir le Reel Bienvenue">
             <div class="reel-aspect">
-              <img src="assets/instagram/reel_cover_12.jpg" alt="Bienvenue chez Mister Bnine Dcheira" loading="lazy">
+              <img src="assets/instagram/reel_cover_12.jpg" alt="Bienvenue chez Mister Bnine">
               <div class="reel-play-btn" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
               <div class="reel-overlay">
-                <div class="reel-top-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  </svg>
-                  <span>Reel Officiel</span>
-                </div>
-                <div class="reel-info">
-                  <span class="reel-tag">Mascotte • Présentation</span>
-                  <div class="reel-title">مرحبا بكم في مطعم مستر بنين</div>
-                  <div class="reel-cta-row">
+                <div class="reel-top-badge">Reel Officiel</div>
+                <div>
+                  <div class="reel-info-tag">Mascotte • Accueil</div>
+                  <div class="reel-info-title">مرحبا بكم في مطعم مستر بنين</div>
+                  <div class="reel-info-footer">
                     <span>Dcheira El Jihadia</span>
-                    <span class="reel-cta-action">Voir la vidéo ↗</span>
+                    <span style="color:var(--gold-primary);">Voir la vidéo ↗</span>
                   </div>
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Reel 4: Loaded Bowls & Salades -->
-          <a href="https://www.instagram.com/reel/DPvW3XWDZyT/" target="_blank" rel="noopener" class="reel-card" title="Regarder le Reel Salades et Barquettes">
+          <!-- Reel 4: Salades & Loaded Bowls -->
+          <a href="https://www.instagram.com/reel/DPvW3XWDZyT/" target="_blank" rel="noopener" class="reel-card" title="Voir le Reel Salades royales">
             <div class="reel-aspect">
-              <img src="assets/instagram/reel_cover_1.jpg" alt="Salades Royales et Barquettes Mister Bnine" loading="lazy">
+              <img src="assets/instagram/reel_cover_1.jpg" alt="Salades royales Mister Bnine">
               <div class="reel-play-btn" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
               <div class="reel-overlay">
-                <div class="reel-top-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  </svg>
-                  <span>Reel Officiel</span>
-                </div>
-                <div class="reel-info">
-                  <span class="reel-tag">Salades • Fraîcheur</span>
-                  <div class="reel-title">Barquettes royales & salades composées</div>
-                  <div class="reel-cta-row">
+                <div class="reel-top-badge">Reel Officiel</div>
+                <div>
+                  <div class="reel-info-tag">Salades • Fraîcheur</div>
+                  <div class="reel-info-title">Barquettes royales & bowls frais</div>
+                  <div class="reel-info-footer">
                     <span>Avocat & Fruits de Mer</span>
-                    <span class="reel-cta-action">Voir la vidéo ↗</span>
+                    <span style="color:var(--gold-primary);">Voir la vidéo ↗</span>
                   </div>
                 </div>
               </div>
@@ -755,90 +807,65 @@
           </a>
 
           <!-- Reel 5: Carte et Crêpes -->
-          <a href="https://www.instagram.com/reel/DNnhmFzI9-1/" target="_blank" rel="noopener" class="reel-card" title="Regarder le Reel Carte et Crêpes">
+          <a href="https://www.instagram.com/reel/DNnhmFzI9-1/" target="_blank" rel="noopener" class="reel-card" title="Voir le Reel Carte et Desserts">
             <div class="reel-aspect">
-              <img src="assets/instagram/reel_cover_2.jpg" alt="Menu et Crêpes Mister Bnine" loading="lazy">
+              <img src="assets/instagram/reel_cover_2.jpg" alt="Présentation carte et crêpes">
               <div class="reel-play-btn" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
               <div class="reel-overlay">
-                <div class="reel-top-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  </svg>
-                  <span>Reel Officiel</span>
-                </div>
-                <div class="reel-info">
-                  <span class="reel-tag">Carte • Desserts</span>
-                  <div class="reel-title">Présentation de la carte & gourmandises</div>
-                  <div class="reel-cta-row">
-                    <span>Crêpes & Boissons</span>
-                    <span class="reel-cta-action">Voir la vidéo ↗</span>
+                <div class="reel-top-badge">Reel Officiel</div>
+                <div>
+                  <div class="reel-info-tag">Carte • Gourmandises</div>
+                  <div class="reel-info-title">Présentation de la carte & crêpes</div>
+                  <div class="reel-info-footer">
+                    <span>Grand Agadir</span>
+                    <span style="color:var(--gold-primary);">Voir la vidéo ↗</span>
                   </div>
                 </div>
               </div>
             </div>
           </a>
 
-          <!-- Reel 6: Sandwichs Roll & Spécialités -->
-          <a href="https://www.instagram.com/reel/DMFybVEt1o6/" target="_blank" rel="noopener" class="reel-card" title="Regarder le Reel Sandwichs Roll">
+          <!-- Reel 6: Sandwichs Roll -->
+          <a href="https://www.instagram.com/reel/DMFybVEt1o6/" target="_blank" rel="noopener" class="reel-card" title="Voir le Reel Sandwichs Roll">
             <div class="reel-aspect">
-              <img src="assets/instagram/reel_cover_5.jpg" alt="Sandwichs Roll Mister Bnine" loading="lazy">
+              <img src="assets/instagram/reel_cover_5.jpg" alt="Sandwichs Roll toastés">
               <div class="reel-play-btn" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
               <div class="reel-overlay">
-                <div class="reel-top-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  </svg>
-                  <span>Reel Officiel</span>
-                </div>
-                <div class="reel-info">
-                  <span class="reel-tag">Fast-Food • Tacos</span>
-                  <div class="reel-title">Sandwichs Roll, Tacos & Wraps chauds</div>
-                  <div class="reel-cta-row">
+                <div class="reel-top-badge">Reel Officiel</div>
+                <div>
+                  <div class="reel-info-tag">Rolls • Toastés</div>
+                  <div class="reel-info-title">Sandwichs Roll & Tacos fondants</div>
+                  <div class="reel-info-footer">
                     <span>Pain Chika & Aïch</span>
-                    <span class="reel-cta-action">Voir la vidéo ↗</span>
+                    <span style="color:var(--gold-primary);">Voir la vidéo ↗</span>
                   </div>
                 </div>
               </div>
             </div>
           </a>
-
         </div>
 
-        <!-- Follow Profile Banner -->
-        <div class="instagram-follow-banner">
-          <div class="ig-profile-preview">
-            <div class="ig-avatar-wrap">
-              <img src="assets/logo_mascot_round.png" alt="Avatar officiel @restaurant_misterbnine" class="ig-avatar-img">
-              <span class="ig-badge-verified" title="Compte officiel">✓</span>
-            </div>
+        <!-- Follow Box -->
+        <div class="instagram-follow-box">
+          <div class="ig-profile-snippet">
+            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="ig-avatar-ring">
             <div>
-              <div class="ig-handle">
-                <span>restaurant_misterbnine</span>
-                <span style="font-size:0.75rem; color:var(--accent-gold); font-weight:700; background:rgba(229,169,60,0.15); padding:2px 8px; border-radius:10px;">Compte Officiel</span>
+              <div style="font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:#FFFFFF;">
+                @restaurant_misterbnine <span style="font-size:0.75rem; color:var(--gold-primary); background:rgba(214,173,99,0.15); padding:2px 8px; border-radius:10px;">Officiel</span>
               </div>
-              <div class="ig-bio">
-                Restaurant & Fast-Food au feu de bois 🍕 • 117 Ave Al Mourabitin, Dcheira El Jihadia • 📞 06 65 63 84 87
+              <div style="color:var(--text-secondary); font-size:0.9rem; margin-top:2px;">
+                Restaurant & Fast-Food au feu de bois 🍕 • 117 Ave Al Mourabitin, Dcheira El Jihadia
               </div>
             </div>
           </div>
 
-          <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" class="btn-instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
+          <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" class="btn-instagram-follow">
             <span>Rejoindre sur Instagram</span>
+            <span>↗</span>
           </a>
         </div>
 
@@ -846,159 +873,255 @@
     </section>
 
     <!-- ==========================================================================
-         CUSTOMER REVIEWS & SOCIAL PROOF
+         RÉSERVER MA TABLE (AL WALIMA INTERACTIVE MODULE)
          ========================================================================== -->
-    <section class="section">
+    <section class="reservation-section" id="reservation">
       <div class="container">
-        <div style="text-align:center; max-width:640px; margin:0 auto;">
-          <div class="eyebrow-badge">
-            <span class="dot"></span>
-            <span>Avis Clients Vérifiés</span>
-          </div>
-          <h2 style="font-size: 2.5rem; margin-top: 14px;">Ce Que Disent Nos Clients</h2>
-          <p style="color:var(--text-secondary); margin-top:10px;">
-            Plus de 145 avis authentiques sur Google Maps avec une note moyenne de 4.4 / 5.
-          </p>
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Votre Table à Dcheira</span>
+          <h2 class="section-title-display">Réserver ma table</h2>
+          <p class="section-desc-lead">Choisissez votre horaire et réservez votre table en quelques secondes avec confirmation WhatsApp instantanée.</p>
         </div>
 
-        <div class="reviews-grid">
-          
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner">
-              <div class="review-author">
-                <div class="review-avatar">YA</div>
-                <div class="review-meta">
-                  <h4>Youssef Amrani</h4>
-                  <div class="star-rating">★★★★★</div>
-                  <span class="r-date">Client local • Dcheira</span>
+        <div class="reservation-card-shell">
+          <form class="reservation-form">
+            <input type="hidden" name="guests" value="2">
+            
+            <div class="reservation-form-grid">
+              <!-- Nom complet -->
+              <div>
+                <label class="form-label">Nom complet *</label>
+                <input type="text" name="fullname" class="form-input" placeholder="Ex: Mohamed Alami" required>
+              </div>
+
+              <!-- Téléphone WhatsApp -->
+              <div>
+                <label class="form-label">Téléphone (WhatsApp) *</label>
+                <input type="tel" name="phone" class="form-input" placeholder="06 65 63 84 87" required>
+              </div>
+
+              <!-- Convives Counter -->
+              <div>
+                <label class="form-label">Nombre de convives</label>
+                <div class="guests-counter-wrap">
+                  <button type="button" class="btn-counter btn-guest-dec" aria-label="Moins">-</button>
+                  <span class="counter-value-display">2 convives</span>
+                  <button type="button" class="btn-counter btn-guest-inc" aria-label="Plus">+</button>
                 </div>
               </div>
-              <p class="review-quote">
-                "Franchement le meilleur tacos et sandwich roll de Dcheira El Jihadia. La sauce fromagère est super bonne, bien dosée et pas écœurante. Le service est très rapide et les gars sont hyper accueillants !"
-              </p>
-            </div>
-          </div>
 
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner">
-              <div class="review-author">
-                <div class="review-avatar">SM</div>
-                <div class="review-meta">
-                  <h4>Sara Mansouri</h4>
-                  <div class="star-rating">★★★★★</div>
-                  <span class="r-date">Avis Google Maps</span>
+              <!-- Date Picker -->
+              <div>
+                <label class="form-label">Date souhaitée *</label>
+                <input type="date" name="date" class="form-input" required>
+              </div>
+
+              <!-- Service & Heure -->
+              <div class="form-group-full">
+                <label class="form-label">Créneau horaire souhaité</label>
+                <div class="time-slots-grid">
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t1" value="12:30">
+                    <label for="t1">12:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t2" value="13:30">
+                    <label for="t2">13:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t3" value="14:30">
+                    <label for="t3">14:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t4" value="19:30">
+                    <label for="t4">19:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t5" value="20:30" checked>
+                    <label for="t5">20:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t6" value="21:30">
+                    <label for="t6">21:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t7" value="22:30">
+                    <label for="t7">22:30</label>
+                  </div>
+                  <div class="time-slot-pill">
+                    <input type="radio" name="time" id="t8" value="23:30">
+                    <label for="t8">23:30</label>
+                  </div>
                 </div>
               </div>
-              <p class="review-quote">
-                "J'ai testé leur pizza au feu de bois hier soir et c'était un régal absolu. Pâte fine bien cuite avec le logo gravé sur le four à pizza ! Rapport qualité-prix imbattable à Inezgane et Dcheira."
-              </p>
-            </div>
-          </div>
 
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner">
-              <div class="review-author">
-                <div class="review-avatar">KB</div>
-                <div class="review-meta">
-                  <h4>Karim Benali</h4>
-                  <div class="star-rating">★★★★★</div>
-                  <span class="r-date">Commande Livraison WhatsApp</span>
-                </div>
+              <!-- Remarques -->
+              <div class="form-group-full">
+                <label class="form-label">Demande spécifique (Optionnel)</label>
+                <textarea name="notes" class="form-textarea" rows="2" placeholder="Ex: Table à la mezzanine, anniversaire, chaise haute pour enfant..."></textarea>
               </div>
-              <p class="review-quote">
-                "Livraison en 25 minutes chrono à Hay Le Mers. Les sandwichs et frites étaient encore tout chauds et croustillants. Bravo l'équipe Mister Bnine !"
-              </p>
-            </div>
-          </div>
 
+              <!-- Submit -->
+              <div class="form-group-full" style="text-align:center; margin-top:14px;">
+                <button type="submit" class="btn-gold" style="width:100%; justify-content:center; padding:16px;">
+                  <span>Confirmer ma réservation sur WhatsApp</span>
+                  <span>💬 ↗</span>
+                </button>
+                <p style="color:var(--text-muted); font-size:0.8rem; margin-top:10px;">
+                  Sans engagement • Confirmation rapide par notre équipe en salle.
+                </p>
+              </div>
+            </div>
+          </form>
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         LOCATION & INTERACTIVE GOOGLE MAPS SHOWCASE
+         QUESTIONS FRÉQUENTES (ACCORDION FAQ)
          ========================================================================== -->
-    <section class="section" id="location-section" style="background: rgba(255,255,255,0.015);">
+    <section class="faq-section" id="faq">
       <div class="container">
-        
-        <div class="location-card-grid">
-          
-          <!-- Details Left -->
-          <div class="location-details">
-            <div class="eyebrow-badge">
-              <span class="dot"></span>
-              <span>Rendez-nous Visite</span>
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Vous Avez des Questions ?</span>
+          <h2 class="section-title-display">Questions Fréquentes</h2>
+          <p class="section-desc-lead">Tout ce que vous souhaitez savoir avant de venir nous rendre visite.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- Q1 -->
+          <div class="faq-item active">
+            <button class="faq-question-btn" type="button">
+              <span>Quels sont vos horaires d'ouverture ?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Mister Bnine vous accueille 7 jours sur 7 en service continu, du lundi au dimanche de <strong>12:00 à 00:30</strong> du matin. La cuisine reste active jusqu'à la dernière heure pour vos envies nocturnes.</p>
             </div>
+          </div>
 
-            <h2 style="font-size: 2.6rem;">Au Cœur de Dcheira El Jihadia</h2>
-            <p style="color:var(--text-secondary); font-size:1.05rem;">
-              Facilement accessible sur l'Avenue Al Mourabitin, nous vous accueillons dans une ambiance conviviale et chaleureuse.
-            </p>
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Proposez-vous la livraison à domicile ?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Oui, nous assurons la livraison rapide à domicile et sur votre lieu de travail à Dcheira El Jihadia, Inezgane, Hay Le Mers, Tassila et environs. Envoyez simplement votre commande ou position par WhatsApp au <strong>06 65 63 84 87</strong>.</p>
+            </div>
+          </div>
 
-            <div class="location-item">
-              <div class="loc-icon-box">
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>La cuisson se fait-elle vraiment au feu de bois ?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolument ! Notre four à pizza traditionnel noir orné du logo « MB » fonctionne exclusivement au bois sur pierre réfractaire. Cela confère à nos pizzas une texture aérée et un parfum délicatement boisé inimitable.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Les viandes sont-elles fraîches et 100% Halal ?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Oui, l'ensemble de nos viandes (escalopes de poulet marinées, viande hachée pur bœuf, tenders) est certifié 100% Halal et approvisionné quotidiennement. Toutes les salades et légumes sont découpés le matin même dans notre laboratoire.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Peut-on réserver pour un événement ou un groupe ?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Tout à fait ! Notre étage mezzanine permet d'accueillir confortablement des tablées jusqu'à 20-30 personnes pour anniversaires, réunions ou repas de famille. Utilisez notre formulaire de réservation ou appelez-nous directement au <strong>06 65 63 84 87</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NOUS TROUVER & LOCALISATION MAP
+         ========================================================================== -->
+    <section class="location-section" id="contact">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Rendez-nous Visite</span>
+          <h2 class="section-title-display">Nous Rejoindre à Dcheira</h2>
+          <p class="section-desc-lead">Au 117 Avenue Al Mourabitin, nous sommes facilement accessibles avec places de stationnement à proximité.</p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Info Card -->
+          <div class="location-info-card">
+            <div class="info-item-row">
+              <div class="info-icon-box">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </div>
-              <div class="loc-text">
+              <div class="info-text-col">
                 <h4>Adresse</h4>
                 <p>117, Hay Le Mers, Avenue Al Mourabitin, Dcheira El Jihadia 80000, Maroc</p>
               </div>
             </div>
 
-            <div class="location-item">
-              <div class="loc-icon-box">
+            <div class="info-item-row">
+              <div class="info-icon-box">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
               </div>
-              <div class="loc-text">
-                <h4>Téléphone Direct & Commandes</h4>
-                <p><a href="tel:+212665638487" style="color:var(--text-primary); text-decoration:none; font-weight:700;">+212 6 65 63 84 87</a> (06 65 63 84 87)</p>
+              <div class="info-text-col">
+                <h4>Téléphone Direct</h4>
+                <p><a href="tel:+212665638487" style="color:var(--gold-light); font-weight:700;">+212 6 65 63 84 87</a> (06 65 63 84 87)</p>
               </div>
             </div>
 
-            <div class="location-item">
-              <div class="loc-icon-box">
+            <div class="info-item-row">
+              <div class="info-icon-box">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
               </div>
-              <div class="loc-text">
+              <div class="info-text-col">
                 <h4>Horaires d'Ouverture</h4>
                 <p>Du Lundi au Dimanche : <strong>12:00 – 00:30 (Service continu)</strong></p>
               </div>
             </div>
 
-            <div style="display:flex; gap:16px; margin-top:10px; flex-wrap:wrap;">
-              <a href="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29" target="_blank" rel="noopener" class="btn-primary">
-                <span>Ouvrir dans Google Maps</span>
-                <span class="btn-icon-circle">↗</span>
+            <div style="display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;">
+              <a href="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29" target="_blank" rel="noopener" class="btn-gold">
+                <span>Itinéraire Google Maps</span>
+                <span>↗</span>
               </a>
-
-              <a href="tel:+212665638487" class="btn-secondary">
-                <span>Appeler le restaurant</span>
+              <a href="https://wa.me/212665638487" target="_blank" rel="noopener" class="btn-gold-outline">
+                <span>Message WhatsApp</span>
+                <span>💬</span>
               </a>
             </div>
           </div>
 
-          <!-- Google Maps Iframe Embedded Card Right -->
-          <div class="doppelrand-card">
-            <div class="doppelrand-inner" style="padding:10px;">
-              <div class="map-container">
-                <iframe 
-                  title="Mister Bnine Dcheira Google Maps"
-                  src="https://maps.google.com/maps?q=30.3722634,-9.5227452&hl=fr&z=17&output=embed" 
-                  loading="lazy" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
+          <!-- Embedded Map -->
+          <div class="map-embed-frame">
+            <iframe 
+              title="Mister Bnine Dcheira El Jihadia Google Maps"
+              src="https://maps.google.com/maps?q=30.3722634,-9.5227452&hl=fr&z=17&output=embed" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
           </div>
-
         </div>
 
       </div>
@@ -1007,8 +1130,85 @@
   </main>
 
   <!-- ==========================================================================
-       CART & WHATSAPP CHECKOUT DRAWER
+       SITE FOOTER (AL WALIMA LUXURY STYLE)
        ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-bio">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
+            <span class="brand-title-main" style="font-size:1.8rem;">Mister Bnine</span>
+          </div>
+          <p>
+            Restaurant gastronomique et fast-food de référence à Dcheira El Jihadia. Saveurs artisanales au feu de bois, fraîcheur irréprochable et accueil familial.
+          </p>
+          <div class="font-arabic" style="color:var(--gold-primary); font-size:1.1rem; margin-top:10px;">
+            مستر بنين • المذاق الأصيل والضيافة المغربية في قلب دشيرة
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">La Carte</a></li>
+            <li><a href="menu-book.html">Notre Carte Book</a></li>
+            <li><a href="reservation.html">Réserver ma table</a></li>
+            <li><a href="about.html">L'Expérience</a></li>
+            <li><a href="contact.html">Localisation & Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Spécialités</h4>
+          <ul class="footer-links-list">
+            <li><a href="menu.html">Pizzas au Feu de Bois</a></li>
+            <li><a href="menu.html">Burgers Gourmets</a></li>
+            <li><a href="menu.html">Tacos Gratinés Maison</a></li>
+            <li><a href="menu.html">Sandwiches & Shawarma</a></li>
+            <li><a href="menu.html">Salades Royales</a></li>
+            <li><a href="menu.html">Couscous du Vendredi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Horaires & Contact</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>Lundi – Dimanche (7j/7)</li>
+            <li>12:00 – 00:30 (Non-stop)</li>
+            <li style="margin-top:10px;"><strong style="color:#FFF;">117 Ave Al Mourabitin</strong></li>
+            <li>Hay Le Mers, Dcheira El Jihadia</li>
+            <li style="margin-top:10px;"><a href="tel:+212665638487" style="color:var(--gold-light); font-weight:700;">📞 06 65 63 84 87</a></li>
+            <li><a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="color:#E1306C; font-weight:700;">📷 @restaurant_misterbnine ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          © 2026 Mister Bnine (مستر بنين) - Tous droits réservés. Restaurant à Dcheira El Jihadia.
+        </div>
+        <div style="display:flex; gap:20px;">
+          <a href="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29" target="_blank" rel="noopener" style="color:var(--gold-light);">Fiche Google Maps ↗</a>
+          <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="color:var(--gold-light);">Instagram Officiel ↗</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Floating Action (Pulsing Call & Reservation Button) -->
+  <a href="reservation.html" class="call-sticky-btn" title="Réserver ma table ou commander">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    <span>Réserver ma table</span>
+  </a>
+
+  <!-- Cart Drawer -->
   <div class="cart-drawer-overlay"></div>
   <aside class="cart-drawer" aria-label="Panier de commande">
     <div class="cart-header">
@@ -1018,105 +1218,22 @@
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <path d="M16 10a4 4 0 0 1-8 0"></path>
         </svg>
-        <span>Mon Panier Mister Bnine</span>
+        <span>Mon Panier</span>
       </h3>
-      <button class="btn-close-cart" aria-label="Fermer le panier">✕</button>
+      <button class="btn-close-cart" aria-label="Fermer">✕</button>
     </div>
-
-    <div class="cart-items-list">
-      <!-- Items dynamically populated by app.js -->
-    </div>
-
+    <div class="cart-items-list"></div>
     <div class="cart-footer">
       <div class="cart-total-row">
-        <span>Total de la commande :</span>
+        <span>Total :</span>
         <span class="cart-total-val">0 DH</span>
       </div>
-
-      <!-- Mode selection -->
-      <div class="order-type-selector">
-        <button class="order-type-btn active" data-type="livraison">🛵 Livraison</button>
-        <button class="order-type-btn" data-type="emporter">🥡 À emporter</button>
-      </div>
-
-      <!-- User inputs -->
-      <input type="text" id="cart-name" class="cart-input-field" placeholder="Votre nom complet...">
-      <input type="text" id="cart-address" class="cart-input-field" placeholder="Adresse exacte à Dcheira / Inezgane...">
-      <input type="text" id="cart-notes" class="cart-input-field" placeholder="Notes (sauces au choix, sans oignon...)">
-
-      <button class="btn-whatsapp-checkout">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-        </svg>
-        <span>Envoyer sur WhatsApp</span>
+      <button class="btn-gold btn-checkout-whatsapp" style="width:100%; justify-content:center; padding:16px;">
+        <span>Commander sur WhatsApp</span>
+        <span>💬 ↗</span>
       </button>
     </div>
   </aside>
-
-  <!-- ==========================================================================
-       SITE FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        
-        <div class="footer-brand">
-          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
-            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
-            <img src="assets/logo.svg" alt="Mister Bnine Logo" style="height:46px; width:auto;">
-          </div>
-          <p>
-            Restaurant & Fast-Food de référence à Dcheira El Jihadia. Saveurs authentiques, ingrédients frais et accueil chaleureux au quotidien.
-          </p>
-          <p class="arabic-text" style="color:var(--accent-gold); font-size:1.05rem; margin-top:8px;">
-            مستر بنين - المذاق الأصيل في قلب دشيرة الجهادية
-          </p>
-          <div style="margin-top:14px;">
-            <a href="https://www.instagram.com/restaurant_misterbnine/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--text-secondary); text-decoration:none; font-size:0.88rem; font-weight:600;">
-              <span style="color:#E1306C;">📷</span> @restaurant_misterbnine ↗
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="menu.html">Notre Menu Complet</a></li>
-            <li><a href="about.html">Notre Histoire & Hygiène</a></li>
-            <li><a href="contact.html">Localisation & Accès</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Nos Spécialités Réelles</h4>
-          <ul class="footer-links">
-            <li><a href="menu.html">Pizzas au Four à Bois</a></li>
-            <li><a href="menu.html">Tacos & Sauce Fromagère</a></li>
-            <li><a href="menu.html">Sandwiches Roll Croustillants</a></li>
-            <li><a href="menu.html">Salades Fraîches Avocat-Mangue</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Coordonnées</h4>
-          <ul class="footer-links" style="color:var(--text-secondary); font-size:0.9rem;">
-            <li>📍 117, Hay Le Mers, Av. Al Mourabitin</li>
-            <li>🌆 Dcheira El Jihadia 80000</li>
-            <li>📞 <a href="tel:+212665638487" style="color:var(--accent-gold);">+212 6 65 63 84 87</a></li>
-            <li>🕒 12:00 – 00:30 (7j/7 sans interruption)</li>
-            <li><a href="https://maps.app.goo.gl/Y2hHxJQywBc3FXu29" target="_blank" rel="noopener" style="color:var(--text-primary); text-decoration:underline;">Fiche Google Maps ↗</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 Mister Bnine Restaurant. Tous droits réservés.</div>
-        <div>Dcheira El Jihadia • Inezgane • Agadir • Maroc</div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="app.js"></script>

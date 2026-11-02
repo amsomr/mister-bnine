@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="scroll-smooth antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre Carte Book | Mister Bnine Dcheira El Jihadia</title>
+  <meta name="description" content="Feuilletez la carte complète et les affiches officielles de Mister Bnine : Salades, Sandwiches, Pizzas au feu de bois, Burgers gourmets et Tacos.">
+  <meta name="theme-color" content="#141210">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo_mascot_round.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-top"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="site-navbar site-navbar-glass" aria-label="Navigation Principale">
+      <a href="index.html" class="brand-wrap">
+        <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title-main">Mister Bnine</span>
+          <span class="brand-subtitle-arabic">مستر بنين • دشيرة</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="index.html">Accueil</a></li>
+        <li class="nav-link-item"><a href="menu.html">La Carte</a></li>
+        <li class="nav-link-item"><a href="menu-book.html" class="active">Notre Carte Book</a></li>
+        <li class="nav-link-item"><a href="about.html">L'Expérience</a></li>
+        <li class="nav-link-item"><a href="index.html#reviews">Avis Clients</a></li>
+        <li class="nav-link-item"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="reservation.html" class="btn-gold btn-gold-header">
+          <span>Réserver ma table</span>
+          <span>↗</span>
+        </a>
+
+        <button class="btn-cart-trigger" aria-label="Voir le panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Menu Mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">La Carte</a>
+    <a href="menu-book.html">Notre Carte Book</a>
+    <a href="reservation.html">Réserver ma table</a>
+    <a href="about.html">L'Expérience</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- Interactive Menu Book Section -->
+    <section class="menu-book-viewport">
+      <div class="container" style="text-align:center;">
+        
+        <div style="margin-bottom:30px;">
+          <span class="section-script-subtitle">Visionneuse Officielle</span>
+          <h1 class="section-title-display">Notre Carte Book</h1>
+          <p class="section-desc-lead">Feuilletez les affiches authentiques de notre carte comme si vous étiez en salle.</p>
+        </div>
+
+        <!-- Book Display Frame -->
+        <div class="book-display-frame" style="margin: 0 auto;">
+          <img src="assets/photos/affiche_menu_exact.jpg" alt="Carte officielle Mister Bnine" class="book-page-image">
+        </div>
+
+        <!-- Page Title & Guidance -->
+        <div style="margin-top:16px;">
+          <div class="book-page-title" style="font-family:var(--font-display); font-size:1.45rem; font-weight:700; color:var(--gold-light);">
+            Carte Officielle - Salades & Sandwiches
+          </div>
+          <p style="color:var(--text-muted); font-size:0.84rem; margin-top:4px;">
+            Pincez pour zoomer · Cliquez sur les flèches pour tourner la page
+          </p>
+        </div>
+
+        <!-- Book Controls Bar -->
+        <div class="book-controls-bar">
+          <button class="btn-book-nav btn-book-prev" aria-label="Page précédente">‹</button>
+          <span class="book-page-indicator">‹ 1 / 5 ›</span>
+          <button class="btn-book-nav btn-book-next" aria-label="Page suivante">›</button>
+        </div>
+
+        <!-- Quick Action CTA -->
+        <div style="display:flex; justify-content:center; gap:16px; margin-top:36px; flex-wrap:wrap;">
+          <a href="menu.html" class="btn-gold-outline">
+            <span>Passer à la Carte Interactive avec Panier</span>
+            <span>🛒</span>
+          </a>
+          <a href="https://wa.me/212665638487?text=Salam%20Mister%20Bnine%20!%20Je%20souhaite%20commander%20d%27apr%C3%A8s%20votre%20carte" target="_blank" rel="noopener" class="btn-gold">
+            <span>Commander cette sélection sur WhatsApp</span>
+            <span>💬 ↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-bio">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
+            <span class="brand-title-main" style="font-size:1.8rem;">Mister Bnine</span>
+          </div>
+          <p>La référence gourmande au feu de bois à Dcheira El Jihadia.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">La Carte</a></li>
+            <li><a href="menu-book.html">Notre Carte Book</a></li>
+            <li><a href="reservation.html">Réserver ma table</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Horaires</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>Lundi - Dimanche 7j/7</li>
+            <li>12:00 – 00:30</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>117 Ave Al Mourabitin, Dcheira</li>
+            <li>📞 06 65 63 84 87</li>
+            <li>📷 @restaurant_misterbnine</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <div>© 2026 Mister Bnine - Tous droits réservés.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-overlay"></div>
+  <aside class="cart-drawer">
+    <div class="cart-header">
+      <h3><span>Mon Panier</span></h3>
+      <button class="btn-close-cart">✕</button>
+    </div>
+    <div class="cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total :</span>
+        <span class="cart-total-val">0 DH</span>
+      </div>
+      <button class="btn-gold btn-checkout-whatsapp" style="width:100%; justify-content:center;">
+        <span>Commander sur WhatsApp 💬</span>
+      </button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

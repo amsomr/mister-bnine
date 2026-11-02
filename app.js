@@ -1,6 +1,6 @@
 /**
- * MISTER BNINE - INTERACTIVE ENGINE & ORDERING LOGIC
- * Fast-Food & Restaurant Gastronomique | Dcheira El Jihadia
+ * MISTER BNINE - LUXURY INTERACTIVE ENGINE
+ * Inspired by Al Walima (Agadir / Dcheira El Jihadia)
  * Phone / WhatsApp: +212 6 65 63 84 87
  */
 
@@ -10,38 +10,36 @@ document.addEventListener('DOMContentLoaded', () => {
   initCart();
   initMenuFilters();
   initSearch();
+  initReservation();
+  initFAQ();
+  initMenuBook();
 });
 
 /* ==========================================================================
-   1. NAVBAR & MOBILE DRAWER CHOREOGRAPHY
+   1. NAVBAR & MOBILE DRAWER
    ========================================================================== */
 function initNavbar() {
-  const island = document.querySelector('.nav-island');
+  const navbar = document.querySelector('.site-navbar');
   const toggle = document.querySelector('.mobile-toggle');
-  const drawer = document.querySelector('.mobile-nav-drawer');
+  const drawer = document.querySelector('.mobile-drawer');
 
-  // Scroll dynamics
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
-      island?.classList.add('scrolled');
+      navbar?.classList.add('scrolled');
     } else {
-      island?.classList.remove('scrolled');
+      navbar?.classList.remove('scrolled');
     }
   }, { passive: true });
 
-  // Mobile menu toggle
   if (toggle && drawer) {
     toggle.addEventListener('click', () => {
       const isOpen = drawer.classList.contains('open');
-      toggle.classList.toggle('active', !isOpen);
       drawer.classList.toggle('open', !isOpen);
       document.body.style.overflow = !isOpen ? 'hidden' : '';
     });
 
-    // Close when clicking nav links inside drawer
     drawer.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        toggle.classList.remove('active');
         drawer.classList.remove('open');
         document.body.style.overflow = '';
       });
@@ -54,11 +52,10 @@ function initNavbar() {
    Hours: 12:00 PM (12:00) to 00:30 AM (00:30)
    ========================================================================== */
 function initOpeningHours() {
-  const statusElements = document.querySelectorAll('.live-status-badge');
+  const statusElements = document.querySelectorAll('.hero-status-pill, .live-status-badge');
   if (!statusElements.length) return;
 
   function checkStatus() {
-    // Get current time in Morocco (Africa/Casablanca)
     const now = new Date();
     const moroccoTimeStr = now.toLocaleString("en-US", { timeZone: "Africa/Casablanca" });
     const moroccoDate = new Date(moroccoTimeStr);
@@ -67,219 +64,197 @@ function initOpeningHours() {
     const minutes = moroccoDate.getMinutes();
     const totalMinutes = hours * 60 + minutes;
 
-    // 12:00 PM is 720 minutes. 00:30 AM is 30 minutes.
-    // Open between 12:00 (720 min) and 23:59 (1439 min) OR between 00:00 (0 min) and 00:30 (30 min).
+    // 12:00 (720 min) to 00:30 (30 min)
     const isOpen = (totalMinutes >= 720) || (totalMinutes <= 30);
 
     statusElements.forEach(el => {
-      const dot = el.querySelector('.live-status-dot');
-      const text = el.querySelector('.status-text');
+      const textSpan = el.querySelector('.status-text') || el;
+      const dot = el.querySelector('.status-dot');
 
       if (isOpen) {
-        if (dot) {
-          dot.classList.remove('closed');
-          dot.classList.add('open');
+        if (dot) dot.style.background = '#10B981';
+        if (textSpan.tagName === 'SPAN') {
+          textSpan.textContent = "Ouvert actuellement • Service continu jusqu'à 00:30";
         }
-        if (text) text.textContent = "Ouvert actuellement • Ferme à 00h30";
       } else {
-        if (dot) {
-          dot.classList.remove('open');
-          dot.classList.add('closed');
+        if (dot) dot.style.background = '#EF4444';
+        if (textSpan.tagName === 'SPAN') {
+          textSpan.textContent = "Fermé actuellement • Ouvre à 12:00";
         }
-        if (text) text.textContent = "Fermé actuellement • Ouvre à 12h00";
       }
     });
   }
 
   checkStatus();
-  // Check every minute
   setInterval(checkStatus, 60000);
 }
 
 /* ==========================================================================
    3. CART & WHATSAPP DIRECT ORDER SYSTEM
    ========================================================================== */
-const RESTAURANT_PHONE = "212665638487"; // 0665638487
-
-let cart = JSON.parse(localStorage.getItem('mister_bnine_cart')) || [];
-let orderType = 'livraison'; // 'livraison' | 'emporter'
-
-function saveCart() {
-  localStorage.setItem('mister_bnine_cart', JSON.stringify(cart));
-  updateCartUI();
-}
+let cart = [];
 
 function initCart() {
-  // Bind trigger buttons
   const triggers = document.querySelectorAll('.btn-cart-trigger');
   const overlay = document.querySelector('.cart-drawer-overlay');
   const drawer = document.querySelector('.cart-drawer');
   const closeBtn = document.querySelector('.btn-close-cart');
-  const orderTypeBtns = document.querySelectorAll('.order-type-btn');
-  const checkoutBtn = document.querySelector('.btn-whatsapp-checkout');
+  const addButtons = document.querySelectorAll('.btn-add-cart, .btn-add-item');
+  const checkoutBtn = document.querySelector('.btn-checkout-whatsapp');
+
+  try {
+    const stored = localStorage.getItem('mb_cart');
+    if (stored) cart = JSON.parse(stored);
+  } catch(e) {
+    cart = [];
+  }
+  updateCartUI();
 
   function openCart() {
-    overlay?.classList.add('open');
     drawer?.classList.add('open');
+    overlay?.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeCart() {
-    overlay?.classList.remove('open');
     drawer?.classList.remove('open');
+    overlay?.classList.remove('open');
     document.body.style.overflow = '';
   }
 
-  triggers.forEach(btn => btn.addEventListener('click', openCart));
+  triggers.forEach(b => b.addEventListener('click', openCart));
   overlay?.addEventListener('click', closeCart);
   closeBtn?.addEventListener('click', closeCart);
 
-  // Bind order type buttons
-  orderTypeBtns.forEach(btn => {
+  addButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      orderTypeBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      orderType = btn.dataset.type || 'livraison';
-      const addressField = document.querySelector('#cart-address');
-      if (addressField) {
-        addressField.placeholder = orderType === 'livraison' 
-          ? "Adresse exacte à Dcheira / Inezgane..." 
-          : "Nom pour le retrait au comptoir...";
-      }
+      e.preventDefault();
+      const id = btn.dataset.id || 'item-' + Math.random().toString(36).substr(2, 6);
+      const name = btn.dataset.name || 'Plat Mister Bnine';
+      const price = parseFloat(btn.dataset.price) || 35;
+
+      addToCart(id, name, price);
+      showToast(`« ${name} » ajouté au panier !`);
     });
   });
 
-  // Bind Add to Cart buttons
-  document.addEventListener('click', (e) => {
-    const addBtn = e.target.closest('.btn-add-cart');
-    if (addBtn) {
-      const id = addBtn.dataset.id;
-      const name = addBtn.dataset.name;
-      const price = parseFloat(addBtn.dataset.price);
-      addToCart(id, name, price);
-    }
-  });
-
-  // Bind WhatsApp Checkout
-  if (checkoutBtn) {
-    checkoutBtn.addEventListener('click', handleWhatsAppCheckout);
-  }
-
-  updateCartUI();
+  checkoutBtn?.addEventListener('click', handleCheckoutWhatsApp);
 }
 
 function addToCart(id, name, price) {
-  const existing = cart.find(item => item.id === id);
+  const existing = cart.find(i => i.id === id);
   if (existing) {
     existing.qty += 1;
   } else {
     cart.push({ id, name, price, qty: 1 });
   }
   saveCart();
-  showToast(`Ajouté au panier : ${name}`);
+  updateCartUI();
 }
 
-function updateItemQty(id, delta) {
-  const item = cart.find(i => i.id === id);
-  if (!item) return;
-
-  item.qty += delta;
-  if (item.qty <= 0) {
-    cart = cart.filter(i => i.id !== id);
-  }
-  saveCart();
+function saveCart() {
+  try {
+    localStorage.setItem('mb_cart', JSON.stringify(cart));
+  } catch(e) {}
 }
 
 function updateCartUI() {
-  const badgeCounts = document.querySelectorAll('.cart-count-badge');
-  const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
-  
-  badgeCounts.forEach(b => {
-    b.textContent = totalItems;
-    b.style.display = totalItems > 0 ? 'flex' : 'none';
+  const badges = document.querySelectorAll('.cart-count-badge');
+  const list = document.querySelector('.cart-items-list');
+  const totalVal = document.querySelector('.cart-total-val');
+
+  const count = cart.reduce((acc, i) => acc + i.qty, 0);
+  const total = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
+
+  badges.forEach(b => {
+    b.textContent = count;
+    b.style.display = count > 0 ? 'flex' : 'none';
   });
 
-  const cartList = document.querySelector('.cart-items-list');
-  const totalVal = document.querySelector('.cart-total-val');
-  const totalCost = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-
   if (totalVal) {
-    totalVal.textContent = `${totalCost} DH`;
+    totalVal.textContent = total.toFixed(2).replace('.00', '') + ' DH';
   }
 
-  if (cartList) {
-    if (cart.length === 0) {
-      cartList.innerHTML = `
-        <div class="empty-cart-state">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          <p>Votre panier est vide pour le moment.</p>
-          <span style="font-size:0.8rem; color:var(--text-muted)">Choisissez vos tacos, pizzas ou burgers préférés !</span>
-        </div>
-      `;
-    } else {
-      cartList.innerHTML = cart.map(item => `
-        <div class="cart-item-row" data-id="${item.id}">
-          <div class="cart-item-info">
-            <h4>${item.name}</h4>
-            <div class="item-unit-price">${item.price} DH x ${item.qty} = ${item.price * item.qty} DH</div>
-          </div>
-          <div class="cart-item-qty">
-            <button class="qty-btn" onclick="updateItemQty('${item.id}', -1)">-</button>
-            <span class="qty-val">${item.qty}</span>
-            <button class="qty-btn" onclick="updateItemQty('${item.id}', 1)">+</button>
-          </div>
-        </div>
-      `).join('');
-    }
-  }
-}
+  if (!list) return;
 
-function handleWhatsAppCheckout(e) {
-  e.preventDefault();
   if (cart.length === 0) {
-    alert("Votre panier est vide. Veuillez sélectionner un plat.");
+    list.innerHTML = `
+      <div style="text-align:center; padding:50px 20px; color:var(--text-muted);">
+        <p style="font-size:2.4rem; margin-bottom:12px;">🍽️</p>
+        <p style="font-family:var(--font-display); font-size:1.3rem; color:var(--gold-light);">Votre panier est vide</p>
+        <p style="font-size:0.88rem; margin-top:6px;">Ajoutez des pizzas au feu de bois, burgers ou salades fraîches pour commander !</p>
+      </div>
+    `;
     return;
   }
 
-  const nameInput = document.querySelector('#cart-name')?.value.trim();
-  const addressInput = document.querySelector('#cart-address')?.value.trim();
-  const notesInput = document.querySelector('#cart-notes')?.value.trim();
+  list.innerHTML = cart.map(item => `
+    <div class="cart-item-card">
+      <div>
+        <h4 style="font-family:var(--font-display); font-size:1.15rem; color:#FFFFFF; margin-bottom:4px;">${item.name}</h4>
+        <div style="font-size:0.85rem; color:var(--gold-primary); font-weight:700;">${item.price} DH / unité</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button onclick="decrementCart('${item.id}')" style="width:28px; height:28px; border-radius:50%; background:rgba(214,173,99,0.15); border:1px solid var(--gold-primary); color:var(--gold-light); font-weight:800; display:flex; align-items:center; justify-content:center;">-</button>
+        <span style="font-weight:700; min-width:18px; text-align:center; color:#FFF;">${item.qty}</span>
+        <button onclick="incrementCart('${item.id}')" style="width:28px; height:28px; border-radius:50%; background:rgba(214,173,99,0.15); border:1px solid var(--gold-primary); color:var(--gold-light); font-weight:800; display:flex; align-items:center; justify-content:center;">+</button>
+      </div>
+    </div>
+  `).join('');
+}
 
+window.incrementCart = function(id) {
+  const item = cart.find(i => i.id === id);
+  if (item) {
+    item.qty += 1;
+    saveCart();
+    updateCartUI();
+  }
+};
+
+window.decrementCart = function(id) {
+  const index = cart.findIndex(i => i.id === id);
+  if (index > -1) {
+    if (cart[index].qty > 1) {
+      cart[index].qty -= 1;
+    } else {
+      cart.splice(index, 1);
+    }
+    saveCart();
+    updateCartUI();
+  }
+};
+
+function handleCheckoutWhatsApp() {
+  if (cart.length === 0) {
+    alert("Votre panier est vide. Veuillez sélectionner des plats !");
+    return;
+  }
+
+  const total = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
   let message = `*Salam Mister Bnine !*\nJe souhaite passer une commande :\n\n`;
 
-  cart.forEach((item, index) => {
-    message += `${index + 1}. *${item.name}* x ${item.qty} = ${item.price * item.qty} DH\n`;
+  cart.forEach(item => {
+    message += `• ${item.qty}x ${item.name} (${item.price * item.qty} DH)\n`;
   });
 
-  const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-  message += `\n*Total : ${total} DH*`;
-  message += `\n*Mode :* ${orderType === 'livraison' ? '🛵 Livraison à Dcheira/Inezgane' : '🥡 À emporter (Sur place)'}`;
-
-  if (nameInput) message += `\n*Nom :* ${nameInput}`;
-  if (addressInput) message += `\n*Adresse / Repère :* ${addressInput}`;
-  if (notesInput) message += `\n*Notes (sauce, sans oignons, etc.) :* ${notesInput}`;
-
-  message += `\n\n_Commande transmise depuis le site mister-bnine.ma_`;
+  message += `\n*TOTAL : ${total.toFixed(2).replace('.00', '')} DH*\n`;
+  message += `\nNom :\nAdresse / Quartier à Dcheira :\n(Option : Sur place / À emporter / Livraison)`;
 
   const encoded = encodeURIComponent(message);
-  const waUrl = `https://wa.me/${RESTAURANT_PHONE}?text=${encoded}`;
-  window.open(waUrl, '_blank');
+  window.open(`https://wa.me/212665638487?text=${encoded}`, '_blank');
 }
 
 /* ==========================================================================
-   4. MENU FILTERING LOGIC
+   4. MENU FILTERS & SEARCH
    ========================================================================== */
 function initMenuFilters() {
-  const filterBtns = document.querySelectorAll('.menu-tab-btn');
-  const cards = document.querySelectorAll('.menu-card');
+  const buttons = document.querySelectorAll('.menu-tab-btn, .category-filter-pill');
+  const cards = document.querySelectorAll('.dish-card, .menu-card');
 
-  filterBtns.forEach(btn => {
+  buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
+      buttons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
       const filter = btn.dataset.filter;
@@ -295,24 +270,20 @@ function initMenuFilters() {
   });
 }
 
-/* ==========================================================================
-   5. REAL-TIME SEARCH (For menu.html)
-   ========================================================================== */
 function initSearch() {
-  const searchInput = document.querySelector('#menu-search-input');
-  if (!searchInput) return;
+  const input = document.querySelector('#menu-search-input');
+  const cards = document.querySelectorAll('.dish-card, .menu-card');
 
-  const cards = document.querySelectorAll('.menu-card');
+  if (!input) return;
 
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase().trim();
+  input.addEventListener('input', (e) => {
+    const q = e.target.value.toLowerCase().trim();
 
     cards.forEach(card => {
-      const title = card.querySelector('.item-name')?.textContent.toLowerCase() || '';
-      const desc = card.querySelector('.item-description')?.textContent.toLowerCase() || '';
-      const category = card.dataset.category?.toLowerCase() || '';
+      const name = card.querySelector('.dish-title, .item-name')?.textContent.toLowerCase() || '';
+      const desc = card.querySelector('.dish-desc, .item-description')?.textContent.toLowerCase() || '';
 
-      if (title.includes(query) || desc.includes(query) || category.includes(query)) {
+      if (name.includes(q) || desc.includes(q)) {
         card.style.display = 'flex';
       } else {
         card.style.display = 'none';
@@ -322,9 +293,133 @@ function initSearch() {
 }
 
 /* ==========================================================================
-   6. HAPTIC TOAST NOTIFICATIONS
+   5. TABLE RESERVATION SYSTEM (AL WALIMA FLOW)
    ========================================================================== */
-function showToast(message) {
+function initReservation() {
+  const forms = document.querySelectorAll('.reservation-form');
+  forms.forEach(form => {
+    // Guest counter
+    const decBtn = form.querySelector('.btn-guest-dec');
+    const incBtn = form.querySelector('.btn-guest-inc');
+    const valDisplay = form.querySelector('.counter-value-display');
+    const hiddenInput = form.querySelector('input[name="guests"]');
+
+    let guests = 2;
+
+    if (decBtn && incBtn && valDisplay) {
+      decBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (guests > 1) {
+          guests -= 1;
+          valDisplay.textContent = guests + (guests > 1 ? ' convives' : ' convive');
+          if (hiddenInput) hiddenInput.value = guests;
+        }
+      });
+
+      incBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (guests < 30) {
+          guests += 1;
+          valDisplay.textContent = guests + ' convives';
+          if (hiddenInput) hiddenInput.value = guests;
+        }
+      });
+    }
+
+    // Submit via WhatsApp
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.querySelector('input[name="fullname"]')?.value || 'Client';
+      const phone = form.querySelector('input[name="phone"]')?.value || '';
+      const date = form.querySelector('input[name="date"]')?.value || 'Aujourd\'hui';
+      const time = form.querySelector('input[name="time"]:checked')?.value || form.querySelector('select[name="time"]')?.value || '20:00';
+      const notes = form.querySelector('textarea[name="notes"]')?.value || '';
+
+      let text = `*RÉSERVATION DE TABLE - MISTER BNINE*\n`;
+      text += `• Nom : ${name}\n`;
+      text += `• Téléphone : ${phone}\n`;
+      text += `• Convives : ${guests} personnes\n`;
+      text += `• Date : ${date}\n`;
+      text += `• Heure souhaitée : ${time}\n`;
+      if (notes) text += `• Remarques : ${notes}\n`;
+
+      const encoded = encodeURIComponent(text);
+      window.open(`https://wa.me/212665638487?text=${encoded}`, '_blank');
+      showToast("Demande de réservation envoyée avec succès !");
+    });
+  });
+}
+
+/* ==========================================================================
+   6. QUESTIONS FRÉQUENTES (ACCORDION FAQ)
+   ========================================================================== */
+function initFAQ() {
+  const items = document.querySelectorAll('.faq-item');
+  items.forEach(item => {
+    const btn = item.querySelector('.faq-question-btn');
+    btn?.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      items.forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+}
+
+/* ==========================================================================
+   7. INTERACTIVE MENU BOOK VIEWER (AL WALIMA /FR/MENU/BOOK)
+   ========================================================================== */
+function initMenuBook() {
+  const book = document.querySelector('.menu-book-viewport');
+  if (!book) return;
+
+  const pages = [
+    { title: "Carte Officielle - Salades & Sandwiches", src: "assets/photos/affiche_menu_exact.jpg" },
+    { title: "Spécialités Pizzas au Feu de Bois", src: "assets/photos/affiche_promo_pizza.jpg" },
+    { title: "Burgers Gourmets & Combos", src: "assets/photos/affiche_burger.jpg" },
+    { title: "Tacos Maison & Sauces Secrètes", src: "assets/photos/affiche_tacos_original.jpg" },
+    { title: "Couscous Royal Traditionnel du Vendredi", src: "assets/photos/affiche_couscous_vendredi.jpg" }
+  ];
+
+  let currentPage = 0;
+  const pageImg = book.querySelector('.book-page-image');
+  const pageIndicator = book.querySelector('.book-page-indicator');
+  const prevBtn = book.querySelector('.btn-book-prev');
+  const nextBtn = book.querySelector('.btn-book-next');
+  const pageTitle = book.querySelector('.book-page-title');
+
+  function renderPage() {
+    if (!pageImg) return;
+    pageImg.style.opacity = '0';
+    setTimeout(() => {
+      pageImg.src = pages[currentPage].src;
+      pageImg.alt = pages[currentPage].title;
+      if (pageIndicator) pageIndicator.textContent = `‹ ${currentPage + 1} / ${pages.length} ›`;
+      if (pageTitle) pageTitle.textContent = pages[currentPage].title;
+      pageImg.style.opacity = '1';
+    }, 150);
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    if (currentPage > 0) {
+      currentPage--;
+      renderPage();
+    }
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    if (currentPage < pages.length - 1) {
+      currentPage++;
+      renderPage();
+    }
+  });
+
+  renderPage();
+}
+
+/* ==========================================================================
+   TOAST HELPER
+   ========================================================================== */
+function showToast(msg) {
   let container = document.querySelector('.toast-container');
   if (!container) {
     container = document.createElement('div');
@@ -334,19 +429,12 @@ function showToast(message) {
 
   const toast = document.createElement('div');
   toast.className = 'toast';
-  toast.innerHTML = `
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.5">
-      <path d="M20 6L9 17l-5-5"></path>
-    </svg>
-    <span>${message}</span>
-  `;
-
+  toast.innerHTML = `<span>✨</span><span>${msg}</span>`;
   container.appendChild(toast);
 
   setTimeout(() => {
     toast.style.opacity = '0';
     toast.style.transform = 'translateY(10px)';
-    toast.style.transition = 'all 0.3s ease';
     setTimeout(() => toast.remove(), 300);
-  }, 2600);
+  }, 3200);
 }

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="scroll-smooth antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réserver ma table | Mister Bnine Dcheira El Jihadia</title>
+  <meta name="description" content="Réservez votre table chez Mister Bnine à Dcheira El Jihadia. Salle climatisée ou étage mezzanine pour familles et groupes. Confirmation instantanée.">
+  <meta name="theme-color" content="#141210">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo_mascot_round.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-top"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="site-navbar site-navbar-glass" aria-label="Navigation Principale">
+      <a href="index.html" class="brand-wrap">
+        <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title-main">Mister Bnine</span>
+          <span class="brand-subtitle-arabic">مستر بنين • دشيرة</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="index.html">Accueil</a></li>
+        <li class="nav-link-item"><a href="menu.html">La Carte</a></li>
+        <li class="nav-link-item"><a href="menu-book.html">Notre Carte Book</a></li>
+        <li class="nav-link-item"><a href="about.html">L'Expérience</a></li>
+        <li class="nav-link-item"><a href="index.html#reviews">Avis Clients</a></li>
+        <li class="nav-link-item"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="reservation.html" class="btn-gold btn-gold-header" style="filter:brightness(1.15);">
+          <span>Réserver ma table</span>
+          <span>✓</span>
+        </a>
+
+        <button class="btn-cart-trigger" aria-label="Voir le panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Menu Mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">La Carte</a>
+    <a href="menu-book.html">Notre Carte Book</a>
+    <a href="reservation.html" style="color:var(--gold-primary);">Réserver ma table</a>
+    <a href="about.html">L'Expérience</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main style="padding-top:100px;">
+    <section class="section">
+      <div class="container">
+        
+        <div class="section-header-center">
+          <span class="section-script-subtitle">Votre Table d'Exception</span>
+          <h1 class="section-title-display">Réserver ma table</h1>
+          <p class="section-desc-lead">
+            Que ce soit pour un déjeuner d'affaires, une soirée en famille ou un anniversaire, nous vous préparons la meilleure table.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1.5fr 1fr; gap:36px; align-items:start; margin-top:40px;">
+          
+          <!-- Reservation Form Card -->
+          <div class="reservation-card-shell" style="margin:0; width:100%; max-width:none;">
+            <form class="reservation-form">
+              <input type="hidden" name="guests" value="2">
+
+              <div class="reservation-form-grid">
+                <div>
+                  <label class="form-label">Nom & Prénom *</label>
+                  <input type="text" name="fullname" class="form-input" placeholder="Ex: Karim Mansouri" required>
+                </div>
+
+                <div>
+                  <label class="form-label">Téléphone WhatsApp *</label>
+                  <input type="tel" name="phone" class="form-input" placeholder="06 65 63 84 87" required>
+                </div>
+
+                <div>
+                  <label class="form-label">Nombre de convives</label>
+                  <div class="guests-counter-wrap">
+                    <button type="button" class="btn-counter btn-guest-dec">-</button>
+                    <span class="counter-value-display">2 convives</span>
+                    <button type="button" class="btn-counter btn-guest-inc">+</button>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="form-label">Date de réservation *</label>
+                  <input type="date" name="date" class="form-input" required>
+                </div>
+
+                <div class="form-group-full">
+                  <label class="form-label">Créneau horaire</label>
+                  <div class="time-slots-grid">
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r1" value="12:30">
+                      <label for="r1">12:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r2" value="13:30">
+                      <label for="r2">13:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r3" value="14:30">
+                      <label for="r3">14:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r4" value="19:30">
+                      <label for="r4">19:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r5" value="20:30" checked>
+                      <label for="r5">20:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r6" value="21:30">
+                      <label for="r6">21:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r7" value="22:30">
+                      <label for="r7">22:30</label>
+                    </div>
+                    <div class="time-slot-pill">
+                      <input type="radio" name="time" id="r8" value="23:30">
+                      <label for="r8">23:30</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group-full">
+                  <label class="form-label">Emplacement & Remarques (Optionnel)</label>
+                  <textarea name="notes" class="form-textarea" rows="3" placeholder="Ex: Table préférée à la mezzanine, table calme, chaise bébé, anniversaire..."></textarea>
+                </div>
+
+                <div class="form-group-full" style="text-align:center; margin-top:12px;">
+                  <button type="submit" class="btn-gold" style="width:100%; justify-content:center; padding:16px;">
+                    <span>Valider & Envoyer ma réservation sur WhatsApp</span>
+                    <span>💬 ↗</span>
+                  </button>
+                  <p style="color:var(--text-muted); font-size:0.8rem; margin-top:8px;">
+                    Confirmation instantanée envoyée directement à notre responsable de salle.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Information Sidebar Card -->
+          <div style="display:flex; flex-direction:column; gap:24px;">
+            <div class="location-info-card">
+              <h3 style="font-family:var(--font-display); font-size:1.6rem; color:var(--gold-light); margin-bottom:16px;">
+                Réservation Téléphonique
+              </h3>
+              <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:18px;">
+                Vous préférez réserver directement par téléphone ou poser une question à notre équipe ?
+              </p>
+              <a href="tel:+212665638487" class="btn-gold" style="width:100%; justify-content:center; margin-bottom:12px;">
+                <span>📞 Appeler le 06 65 63 84 87</span>
+              </a>
+              <a href="https://wa.me/212665638487" target="_blank" rel="noopener" class="btn-gold-outline" style="width:100%; justify-content:center;">
+                <span>Message direct WhatsApp ↗</span>
+              </a>
+            </div>
+
+            <div class="location-info-card">
+              <h4 style="font-family:var(--font-display); font-size:1.35rem; color:var(--gold-light); margin-bottom:12px;">
+                Informations Utiles
+              </h4>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:12px; font-size:0.9rem; color:var(--text-secondary);">
+                <li>📍 <strong>Adresse :</strong> 117 Ave Al Mourabitin, Dcheira El Jihadia</li>
+                <li>🕒 <strong>Horaires :</strong> 12:00 – 00:30 (Service continu 7j/7)</li>
+                <li>🚗 <strong>Stationnement :</strong> Facile devant le restaurant</li>
+                <li>❄️ <strong>Confort :</strong> Salle climatisée & étage mezzanine</li>
+                <li>👶 <strong>Enfants :</strong> Chaises hautes disponibles sur demande</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-bio">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <img src="assets/logo_mascot_round.png" alt="Mascotte Mister Bnine" class="brand-mascot-img" style="width:48px; height:48px;">
+            <span class="brand-title-main" style="font-size:1.8rem;">Mister Bnine</span>
+          </div>
+          <p>La référence gourmande au feu de bois à Dcheira El Jihadia.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">La Carte</a></li>
+            <li><a href="menu-book.html">Notre Carte Book</a></li>
+            <li><a href="reservation.html">Réserver ma table</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Horaires</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>Lundi - Dimanche 7j/7</li>
+            <li>12:00 – 00:30</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links-list" style="color:var(--text-secondary);">
+            <li>117 Ave Al Mourabitin, Dcheira</li>
+            <li>📞 06 65 63 84 87</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <div>© 2026 Mister Bnine - Tous droits réservés.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

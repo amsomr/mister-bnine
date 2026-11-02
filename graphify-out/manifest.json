@@ -1,9 +1,9 @@
 {
   "app.js": {
-    "mtime": 1793618571.3046324,
-    "seen": 1793618909.8521516,
-    "ast_hash": "09df43b84cd5ecd14b43e7cecb48bc60",
-    "semantic_hash": "09df43b84cd5ecd14b43e7cecb48bc60"
+    "mtime": 1793621507.8647025,
+    "seen": 1793621843.17927,
+    "ast_hash": "ae5c945e92a371469f427151c5d91c4c",
+    "semantic_hash": ""
   },
   "serve.py": {
     "mtime": 1793618871.0278208,
@@ -12,39 +12,39 @@
     "semantic_hash": "87ee34cdc01583d24b7a692ca378cd03"
   },
   "README.md": {
-    "mtime": 1793621019.6424303,
-    "seen": 1793621031.5347824,
-    "ast_hash": "5b88705171c7bcfe264d3d1c06afac33",
+    "mtime": 1793621830.356898,
+    "seen": 1793621843.1792831,
+    "ast_hash": "af29f075fa9ea51ae3bb157dcce7787d",
     "semantic_hash": ""
   },
   "about.html": {
-    "mtime": 1793620984.1452022,
-    "seen": 1793621031.534786,
-    "ast_hash": "65f39023c486f2542d3d21b6e0666214",
+    "mtime": 1793621746.651328,
+    "seen": 1793621843.1792858,
+    "ast_hash": "3a43a4aa5258774917e947440404010d",
     "semantic_hash": ""
   },
   "contact.html": {
-    "mtime": 1793620987.2412221,
-    "seen": 1793621031.5347888,
-    "ast_hash": "72417bf8d850193386c34705fba1cf7c",
+    "mtime": 1793621769.1744814,
+    "seen": 1793621843.1792881,
+    "ast_hash": "5883952cb6c8efd46400a769063acec4",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793620976.182151,
-    "seen": 1793621031.5347924,
-    "ast_hash": "635527a3d618b154316ed3b31c9a8cf4",
+    "mtime": 1793621623.6204906,
+    "seen": 1793621843.1792898,
+    "ast_hash": "a03bcf63085ec5aedcc4d99507b8e939",
     "semantic_hash": ""
   },
   "llms.txt": {
-    "mtime": 1793621000.0413043,
-    "seen": 1793621031.5347965,
-    "ast_hash": "7bfc4a395251fef251e9a5c5949c3c0a",
+    "mtime": 1793621804.0937192,
+    "seen": 1793621843.1792917,
+    "ast_hash": "738970714076c9fb141cea486d3c18b9",
     "semantic_hash": ""
   },
   "menu.html": {
-    "mtime": 1793620980.6181796,
-    "seen": 1793621031.5347989,
-    "ast_hash": "c71a7fe37c2500835c3bb2ba4b81b6fd",
+    "mtime": 1793621719.8661458,
+    "seen": 1793621843.1792967,
+    "ast_hash": "623e517742a7345a9bfe4c68e21669d7",
     "semantic_hash": ""
   },
   "robots.txt": {
@@ -321,6 +321,18 @@
     "mtime": 1793620548.3704007,
     "seen": 1793621031.5348635,
     "ast_hash": "55f0eee2486005d803adba5933bbbc69",
+    "semantic_hash": ""
+  },
+  "menu-book.html": {
+    "mtime": 1793621643.9146287,
+    "seen": 1793621843.179294,
+    "ast_hash": "6727abc50aeac59574ef2c6f47508cd6",
+    "semantic_hash": ""
+  },
+  "reservation.html": {
+    "mtime": 1793621668.6987975,
+    "seen": 1793621843.179299,
+    "ast_hash": "422d0f1e4787fe62502484552cbdb770",
     "semantic_hash": ""
   }
 }
