@@ -1,7 +1,7 @@
 {
   "app.js": {
-    "mtime": 1793621507.8647025,
-    "seen": 1793621843.17927,
+    "mtime": 1793714498.3329754,
+    "seen": 1793714579.4949052,
     "ast_hash": "ae5c945e92a371469f427151c5d91c4c",
     "semantic_hash": ""
   },
@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793621623.6204906,
-    "seen": 1793621843.1792898,
-    "ast_hash": "a03bcf63085ec5aedcc4d99507b8e939",
+    "mtime": 1793714344.3439524,
+    "seen": 1793714579.494924,
+    "ast_hash": "762c65d132c9e3daa4bd1708225d18e7",
     "semantic_hash": ""
   },
   "llms.txt": {

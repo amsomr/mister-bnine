@@ -156,59 +156,87 @@
 
   <main>
     <!-- ==========================================================================
-         HERO SECTION (AL WALIMA FACADE WITH MOORISH FRAME)
+         HERO SECTION: FULL-BLEED RESTAURANT HEADER
+         Real restaurant interior & front view with cinematic full-screen presence
          ========================================================================== -->
-    <section class="hero-section">
-      <img src="assets/photos/place_interior_main.jpg" alt="Salle de restaurant Mister Bnine" class="hero-facade-bg">
-      <div class="hero-vignette"></div>
-      <div class="moroccan-ornament" style="position:absolute; inset:0;"></div>
+    <section class="hero-section hero-fullscreen">
+      <!-- Full-bleed real restaurant photo background -->
+      <div class="hero-photo-backdrop" aria-hidden="true">
+        <img src="assets/photos/place_interior_main.jpg" alt="Restaurant Mister Bnine Dcheira El Jihadia" class="hero-photo-img">
+        <div class="hero-photo-overlay"></div>
+      </div>
 
-      <div class="container" style="position:relative; z-index:2;">
-        <div class="hero-frame-shell">
-          <!-- Corner Arabesques (SVGs) -->
-          <svg class="pointer-events-none absolute left-3 top-4 h-[64px] w-[64px] opacity-75 sm:left-6 sm:top-6 sm:h-[90px] sm:w-[90px]" width="90" height="90" viewBox="0 0 100 100" fill="none" aria-hidden="true" style="position:absolute; top:12px; left:12px;">
-            <path d="M8 92 C 28 72 22 48 8 28 C 18 38 32 42 42 32 C 52 22 48 8 28 8 C 48 12 62 28 72 42 C 82 56 88 72 92 88" stroke="rgba(214,173,99,0.4)" stroke-width="1.2" stroke-linecap="round"></path>
-            <path d="M18 88 C 32 74 30 58 22 44 M 38 82 C 48 70 46 58 40 50" stroke="rgba(214,173,99,0.25)" stroke-width="0.9" stroke-linecap="round"></path>
-            <circle cx="24" cy="24" r="3" fill="rgba(214,173,99,0.3)"></circle>
-          </svg>
-
-          <svg class="pointer-events-none absolute bottom-4 right-3 h-[64px] w-[64px] opacity-75 sm:bottom-6 sm:right-6 sm:h-[90px] sm:w-[90px]" width="90" height="90" viewBox="0 0 100 100" fill="none" aria-hidden="true" style="position:absolute; bottom:12px; right:12px; transform:rotate(180deg);">
-            <path d="M8 92 C 28 72 22 48 8 28 C 18 38 32 42 42 32 C 52 22 48 8 28 8 C 48 12 62 28 72 42 C 82 56 88 72 92 88" stroke="rgba(214,173,99,0.4)" stroke-width="1.2" stroke-linecap="round"></path>
-            <path d="M18 88 C 32 74 30 58 22 44 M 38 82 C 48 70 46 58 40 50" stroke="rgba(214,173,99,0.25)" stroke-width="0.9" stroke-linecap="round"></path>
-            <circle cx="24" cy="24" r="3" fill="rgba(214,173,99,0.3)"></circle>
-          </svg>
-
-          <span class="hero-script-tag">Mister Bnine • Dcheira El Jihadia</span>
-          
-          <h1 class="hero-main-title">
-            Découvrez l'authenticité culinaire<br>
-            <span>au cœur de Dcheira El Jihadia</span>
-          </h1>
-
-          <p class="hero-desc">
-            Pizzas artisanales cuites dans notre four à bois traditionnel, viandes marinées grillées, tacos gratinés ultra-généreux et salades fraîches au 117 Avenue Al Mourabitin.
-          </p>
-
-          <div class="hero-status-pill">
-            <span class="status-dot"></span>
-            <span class="status-text">Ouvert actuellement • Service continu jusqu'à 00:30</span>
+      <div class="container hero-fullscreen-container">
+        <div class="hero-center-content">
+          <!-- Subtle Location & Identity Tag -->
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-accent">✦</span>
+            <span>Hay Le Mers • Avenue Al Mourabitin • Dcheira El Jihadia</span>
+            <span class="hero-eyebrow-accent">✦</span>
           </div>
 
-          <div class="hero-cta-group">
-            <a href="reservation.html" class="btn-gold">
+          <!-- Official Restaurant Name -->
+          <h1 class="hero-main-brand">
+            Mister Bnine
+          </h1>
+
+          <!-- Arabic Calligraphy -->
+          <div class="hero-arabic-calligraphy" dir="rtl" lang="ar">
+            مـسـتـر بـنـيـن
+          </div>
+
+          <!-- Tagline -->
+          <p class="hero-tagline">
+            Restaurant & Four au Feu de Bois
+          </p>
+
+          <p class="hero-lead-text">
+            Pizzas artisanales croustillantes cuites à la flamme, burgers gourmets, tacos gratinés et spécialités marocaines préparés chaque jour avec passion au cœur de Dcheira El Jihadia.
+          </p>
+
+          <!-- Status & Google Note Bar -->
+          <div class="hero-info-bar">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span class="status-text">Ouvert actuellement • Service continu jusqu'à 00:30</span>
+            </div>
+            <span class="hero-info-sep">•</span>
+            <div class="hero-google-badge">
+              <span class="stars-gold">★★★★★</span>
+              <strong>4.4 ★</strong>
+              <span>(+145 avis Google)</span>
+            </div>
+          </div>
+
+          <!-- Clean Authentic Action Buttons -->
+          <div class="hero-actions-row">
+            <a href="https://wa.me/212665638487?text=Bonjour%20Mister%20Bnine%20!%20Je%20souhaite%20passer%20commande%20%F0%9F%8D%95" target="_blank" rel="noopener noreferrer" class="btn-gold btn-hero-action">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.974.551 1.761.85 2.796.85 3.183 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.769-5.77-5.769zm10.23 5.767c-.002 5.643-4.588 10.228-10.231 10.228-1.797 0-3.535-.469-5.068-1.357l-5.632 1.477 1.503-5.49c-1-1.611-1.528-3.486-1.527-5.405.002-5.644 4.588-10.23 10.231-10.23 5.641 0 10.229 4.587 10.229 10.23z"/>
+              </svg>
+              <span>Commander sur WhatsApp</span>
+              <span style="font-size:0.9rem;">↗</span>
+            </a>
+
+            <a href="menu.html" class="btn-gold-outline btn-hero-action">
+              <span>Consulter La Carte & Prix</span>
+              <span>📖</span>
+            </a>
+
+            <a href="reservation.html" class="btn-gold-outline btn-hero-action">
               <span>Réserver une table</span>
               <span>↗</span>
             </a>
-            <a href="menu.html" class="btn-gold-outline">
-              <span>Consulter la carte</span>
-              <span>📖</span>
-            </a>
-            <a href="menu-book.html" class="btn-gold-outline">
-              <span>Notre Carte Book</span>
-              <span>🔍</span>
-            </a>
           </div>
         </div>
+
+        <!-- Scroll Down Cue -->
+        <a href="#welcome" class="hero-scroll-indicator" aria-label="Défiler pour découvrir">
+          <span class="scroll-label">Découvrir le restaurant</span>
+          <svg class="scroll-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
       </div>
     </section>
 
